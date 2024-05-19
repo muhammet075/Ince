@@ -38,7 +38,7 @@
 }
 
 .header > div:nth-of-type(1) > div > a > img{
-    width: 110px;
+    width: 100px;
     height: auto;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .header > div:nth-of-type(1) > div > a > span img{
-    width: 15px;
+    width: 12px;
     height: auto;
 }
 
@@ -220,11 +220,13 @@
     top: 0;
     left: 0;
     right: 0;
+    background: #0000008f;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1255px) {
     .header > div:nth-of-type(1) > div > div:nth-of-type(1) > ul{
-        right: 4px;
+        left: 0px;
     }
 }
 
@@ -234,8 +236,8 @@
     }
 
     .header > div:nth-of-type(2){
-        padding: 0 15px;
-        height: 75px;
+        padding: 10px 15px;
+        height: 85px;
     }
 
     .header > div:nth-of-type(1) > div > div:nth-of-type(1) > button:nth-of-type(1){
@@ -267,7 +269,7 @@
     }
 
     .header > div:nth-of-type(2) > a img{
-        max-width: 200px;
+        max-width: 150px;
         height: auto;
         position: absolute;
         left: 0;

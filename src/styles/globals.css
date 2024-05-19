@@ -14,8 +14,8 @@
 
 :root{
     --background1: #ffff;
-    --accent1: #18b100;
-    --border1: #127b02;
+    --accent1: #1561da;
+    --border1: #0d5f00;
 
     --hover1: #2ca31a;
     --toggleSvgColor: invert(1);
@@ -78,6 +78,12 @@ button{
 @media only screen and (max-width: 900px) {
   .bordertop{
     margin-top: -5px !important;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .displaynonemobile {
+      display:none!important
   }
 }
 

@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/hero.module.css";
 import check from "@/assets/icons/greencheck.svg";
+import werkspot from "@/assets/logos/werkspot.svg";
+import google from "@/assets/logos/google.svg";
+import star from "@/assets/icons/goldstar.svg";
 
 function Hero() {
   return (
@@ -10,10 +13,26 @@ function Hero() {
         <div>
 
             <section>
-                <h1>Ince Stukadoor voor uw project</h1>
-                <p>Heeft u net een nieuwbouwwoning of appartement gekocht? Dan is het belangrijk om na te denken over de afwerking van de woning. Na oplevering zijn de ruimtes namelijk nog kaal. Stucwerk op uw wanden zorgt voor een mooie, moderne uitstraling van uw woning, maar is het mogelijk om nieuwbouw te laten stucen? </p>
+                <h1>Uw specialist in stucwerk en afwerking</h1>
+                <p>Bent u de trotse eigenaar van een nieuwbouwwoning of appartement? Of overweegt u een renovatie? Dan is het belangrijk om de afwerking goed te overwegen. Nieuwe ruimtes zijn vaak kaal en leeg bij oplevering. Met stucwerk kunt u uw muren een stijlvolle en moderne uitstraling geven.</p>
+
+                <div>
+                <Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince/reviews" target="_blank">
+                <Image src={werkspot} alt="Logo van Werkspot"/>
+                    <span><p>4.8/5.0</p><Image src={star} alt="Gouden ster"/><Image src={star} alt="Gouden ster"/><Image src={star} alt="Gouden ster"/><Image src={star} alt="Gouden ster"/><Image src={star} alt="Gouden ster"/></span>
+                </Link> 
+
+
+                <Link href="https://maps.app.goo.gl/nUtUQAgADHbWnaMSA" target="_blank">
+                <Image src={google} alt="Logo van Google"/>
+                    <span><p>4.8/5.0</p><Image src={star} alt="Gouden ster"/><Image src={star} alt="Gouden ster"/><Image src={star} alt="Gouden ster"/><Image src={star} alt="Gouden ster"/><Image src={star} alt="Gouden ster"/></span>
+                </Link> 
+
+                
+                </div>
+
             </section>
-            <section>
+            <section data-aos="fade-up">
                 <h2>Hoe kunnen wij helpen?</h2>
                 <ul>
                     <li><Link href="/offerte">Offerte Aanvragen</Link></li>
