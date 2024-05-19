@@ -32,7 +32,8 @@
     "sessionstorage": "^0.1.0",
     "sharp": "^0.31.3",
     "slider": "^1.0.4",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "swiper.js": "^1.0.0"
   },
   "browser": {
     "net": false

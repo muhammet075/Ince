@@ -14,10 +14,11 @@
 
 :root{
     --background1: #ffff;
-    --accent1: #1561da;
+    --accent1: #4d81fe;
+    --accent2: #ecf1ff;
     --border1: #0d5f00;
 
-    --hover1: #2ca31a;
+    --hover1: #88abff;
     --toggleSvgColor: invert(1);
 }
 
@@ -51,6 +52,10 @@ button{
   position: fixed !important;    
   z-index: 99999 !important;    
   animation: fadeinheader 0.3s ease forwards;
+}
+
+.fixedheader > div:nth-of-type(1){
+  display: none !important;
 }
 
 .shadowbottom{

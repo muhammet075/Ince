@@ -5,6 +5,13 @@ import check from "@/assets/icons/greencheck.svg";
 import werkspot from "@/assets/logos/werkspot.svg";
 import google from "@/assets/logos/google.svg";
 import star from "@/assets/icons/goldstar.svg";
+import offerteIco from "@/assets/icons/offerte.svg";
+
+
+import nederland from "@/assets/icons/nederland.svg";
+import reviews from "@/assets/icons/reviews.svg";
+import kwaliteit from "@/assets/icons/kwaliteit.svg";
+
 
 function Hero() {
   return (
@@ -35,7 +42,7 @@ function Hero() {
             <section data-aos="fade-up">
                 <h2>Hoe kunnen wij helpen?</h2>
                 <ul>
-                    <li><Link href="/offerte">Offerte Aanvragen</Link></li>
+                    <li><Link href="/offerte"><Image src={offerteIco} alt="Offerte icoon"/>Offerte Aanvragen</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
 
@@ -43,11 +50,37 @@ function Hero() {
                     <li><Image src={check} alt="Check icoon"/> Prijsindicatie direct in de mail</li>
                     <li><Image src={check} alt="Check icoon"/> Advies op maat</li>
                     <li><Image src={check} alt="Check icoon"/> Snelle reactie</li>
-                    <li><Image src={check} alt="Check icoon"/> Meer dan 100 reviews</li>
+                    <li><Image src={check} alt="Check icoon"/> Meer dan 150 reviews</li>
                 </ul>
             </section>
 
         </div>
+      </div>
+
+      <div>
+        <ul>
+            <li>
+                <Image src={reviews} alt="Icoon van positieve reviews"/>
+                <span>
+                    <h3>Positieve Reviews</h3>
+                    <p>Meer dan 150 tevreden klanten</p>
+                </span>
+            </li>
+            <li>
+                <Image src={kwaliteit} alt="Icoon van kwaliteit"/>
+                <span>
+                    <h3>Kwaliteit en ervaring</h3>
+                    <p>Vakmanschap en kwaliteit staat bovenaan</p>
+                </span>
+            </li>
+            <li>
+                <Image src={nederland} alt="Icoon van Nederland"/>
+                <span>
+                    <h3>Heel Nederland</h3>
+                    <p>Werkzaam in alle plaatsen in heel Nederland</p>
+                </span>
+            </li>
+        </ul>
       </div>
     </div>
   );

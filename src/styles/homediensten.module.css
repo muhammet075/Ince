@@ -1,0 +1,102 @@
+.homediensten{
+    margin: 200px auto 0 auto;
+}
+
+.homediensten > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 65px;
+}
+
+.homediensten > div > h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.homediensten > div > p{
+    font-size: 14px;
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.homediensten > div > div:nth-of-type(1){
+    overflow: hidden;
+}
+
+.homediensten > div > div:nth-of-type(1) > div > section{
+    position: relative;
+    height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--accent1);
+    background: var(--accent2);
+}
+
+.homediensten > div > div:nth-of-type(1) > div > section h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.homediensten > div > div:nth-of-type(1) > div > section p{
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    top: 150px;
+    width: 90%;
+}
+
+.homediensten > div > div:nth-of-type(1) > div > section img{
+    height: 50px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.homediensten > div > div:nth-of-type(1) > div > section a{
+    background-color: #ffff;
+    color: var(--accent1);
+    border: 1.5px solid var(--accent1);
+    border-radius: 25px;
+    font-weight: 500;
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 14px;
+}
+
+.homediensten > div > div:nth-of-type(1) > div > section a:hover{
+    background-color: var(--accent1);
+    color: #ffff;
+    transition: 0.2s ease;
+}
+
+
+.homediensten > div > div:nth-of-type(2){
+    top: auto;
+    bottom: 0;
+}
+
+.homediensten > div > div:nth-of-type(3){
+    top: auto;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1215px) {
+    .homediensten > div{
+        padding: 0 15px 65px 15px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .homediensten{
+        margin: 150px auto 50px auto;
+    }
+}

@@ -1,0 +1,119 @@
+.homeoverons{
+    background-color: var(--accent2);
+    margin: 150px auto;
+    padding: 75px 0;
+}
+
+.homeoverons > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+
+.homeoverons > div section:nth-of-type(1) h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.homeoverons > div section:nth-of-type(1) p{
+    max-width: 500px;
+    font-size: 14px;
+}
+
+.homeoverons > div section:nth-of-type(1) a{
+    background-color: #ffff;
+    color: var(--accent1);
+    border: 1.5px solid var(--accent1);
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 25px;
+    display: block;
+    text-align: center;
+    margin: 30px 0 0 0;
+    font-weight: 400;
+}
+
+.homeoverons > div section:nth-of-type(1) a:hover{
+    background-color: var(--accent1);
+    color: #ffff;
+    transition: 0.2s ease;
+}
+    
+
+
+
+
+.homeoverons > div section:nth-of-type(2){
+    position: relative;
+}
+
+.homeoverons > div section:nth-of-type(2) img{
+    max-width: 500px;
+    height: auto;
+}
+
+.homeoverons > div section:nth-of-type(2) img:nth-of-type(1){
+    margin-top: -50px;
+}
+
+.homeoverons > div section:nth-of-type(2) img:nth-of-type(2){
+    position: absolute;
+    right: 150px;
+    bottom: -215px;
+}
+
+@media only screen and (max-width: 1215px) {
+    .homeoverons{
+        padding: 100px 15px;
+    }
+
+    .homeoverons > div section:nth-of-type(2) img:nth-of-type(2){
+        right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .homeoverons > div section:nth-of-type(2) img:nth-of-type(2){
+        right: 50px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .homeoverons > div{
+        flex-direction: column;
+    }
+
+    .homeoverons > div > section{
+        width: 100%;
+    }
+
+    .homeoverons > div section:nth-of-type(1) p{
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .homeoverons{
+        padding: 50px 15px;
+        margin: 50px auto;
+    }
+    
+    .homeoverons > div{
+        gap: 50px;
+    }
+
+    .homeoverons > div section:nth-of-type(2) img:nth-of-type(1){
+        display: none;
+    }
+
+    .homeoverons > div section:nth-of-type(2) img:nth-of-type(2){
+        position: static;
+        width: 100%;
+    }
+}

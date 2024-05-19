@@ -14,6 +14,9 @@ export default function App({ Component, pageProps }) {
         <link href="/favico-16.png" rel="icon" sizes="16x16" type="image/png"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        
       </Head>
       <Header/>
       <main>

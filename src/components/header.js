@@ -6,13 +6,10 @@ import Image from "next/image";
 import Logo from "@/assets/img/ince-logo.svg";
 import werkspot from "@/assets/logos/werkspot.svg";
 import star from "@/assets/icons/goldstar.svg";
-
 import hamburgerIco from "@/assets/icons/hamburgerico.svg";
 import closeIco from "@/assets/icons/closeico.svg";
-
 import nlFlag from "@/assets/flags/nl.png";
 import enFlag from "@/assets/flags/en.png";
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 
