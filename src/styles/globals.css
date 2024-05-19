@@ -1,25 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka:100,200,300,400,500,600,700,800,900,1000&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,1000&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900,1000&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700,800,900,1000&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,600,700,800,900,1000&display=swap');
 
-* {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Varela+Round:200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Rubik", Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-html,
-body {
-  max-width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+:root{
+    --background1: #ffff;
+    --accent1: #18b100;
+    --border1: #127b02;
+
+    --hover1: #2ca31a;
+    --toggleSvgColor: invert(1);
 }
 
-h1, h2, h3, h4{
-  font-family: "Montserrat";
+body{
+  background: var(--background1);
+  color: var(--textColor1);
 }
 
 main{
-  margin-top: 85px;
+  margin-top: 123px;
 }
 
 a {
@@ -35,30 +43,90 @@ button{
   display: none !important;
 }
 
+.margintop0{
+  margin-top: 0 !important;
+} 
+
+.fixedheader{
+  position: fixed !important;    
+  z-index: 99999 !important;    
+  animation: fadeinheader 0.3s ease forwards;
+}
+
+.shadowbottom{
+  border-bottom: 1px solid #4e4e4e;
+  box-shadow: rgb(0 0 0 / 18%) 0px 7px 7px;
+  margin-bottom: 50px;
+}
+
+.shadowbottom2{
+  border-bottom: 1px solid #4e4e4e;
+  box-shadow: rgb(0 0 0 / 18%) 0px 7px 7px;
+  margin-bottom: 75px !important
+}
+
+.bordertop{
+  border-top: 1px solid var(--border1);
+  margin-top: 75px !important;
+  padding-top: 50px;
+}
+
+.bordernone{
+  border: none !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .bordertop{
+    margin-top: -5px !important;
+  }
+}
+
+.borderbottom{
+  border-bottom: 1px solid var(--border1);
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+}
+
+.borderbottom2{
+  border-bottom: 1px solid var(--border1);
+}
+
 .openhamburger {
-  animation: openhamburger .5s forwards
+  animation: openhamburger 0.5s forwards
 }
 
 .closehamburger {
-  animation: closehamburger .5s forwards
+  animation: closehamburger 0.5s forwards
+}
+  
+@keyframes fadeinheader {
+  0% {
+      top: -50px;
+      opacity: 0;
+  }
+
+  to {
+      top: 0px;
+      opacity: 1;
+  }
 }
 
 @keyframes openhamburger {
   0% {
-      left: -2000px
+      left: -1000px
   }
 
   to {
-      left: 0px;
+      left: 0
   }
 }
 
 @keyframes closehamburger {
   0% {
-      left: 0px;
+      left: 0
   }
 
   to {
-      left: -2000px
+      left: -1000px
   }
 }

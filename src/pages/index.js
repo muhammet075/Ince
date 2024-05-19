@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Head from "next/head";
+import Hero from "@/components/hero";
 
 export default function Home() {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function Home() {
           <meta property="og:url" content=""/>
           <meta property="og:title" content=""/>
       </Head>
+      <Hero/>
     </>
   );
 }
