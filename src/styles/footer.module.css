@@ -90,7 +90,7 @@
 
 .footer > div:nth-of-type(2){
     width: 100%;
-    background-color: var(--accent1);
+    background-color: var(--accent3);
 }
 
 .footer > div:nth-of-type(2) > div{
@@ -123,6 +123,7 @@
 }
 
 .footer > div:nth-of-type(2) > div ul li a img{
+    filter: invert(1);
     max-width: 200px;
     height: auto;
     margin-bottom: 15px;
