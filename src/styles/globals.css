@@ -185,6 +185,11 @@ button{
     height: fit-content !important;
     width: 300px !important;
   }
+
+  .calltoactionheader a{
+    width: 100%;
+    margin-left: -10px;
+  }
 }
 
 
@@ -328,7 +333,7 @@ button{
   .pagelayout{
     margin: 50px auto;
   }
-  
+
   .pagelayout > div > div{
     flex-direction: column;
     gap: 25px;
