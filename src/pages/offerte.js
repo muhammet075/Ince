@@ -9,7 +9,7 @@ export default function Offerte() {
   return (
     <>
       <Head>
-          <title>Offerte</title>
+          <title>Stukadoorsbedrijf Ince - Offerte</title>
           <meta name="description" content=""/>
           <meta name="og:description" content=""/>
           <meta name="keywords" content=""/>

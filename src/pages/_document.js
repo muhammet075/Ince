@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="nl">
       <Head>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXC5CN7M0Q"></script>
       <script

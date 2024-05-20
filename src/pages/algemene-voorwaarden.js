@@ -9,7 +9,7 @@ export default function Algemenevoorwaarden() {
   return (
     <>
       <Head>
-          <title>Algemene Voorwaarden</title>
+          <title>Stukadoorsbedrijf Ince - Algemene Voorwaarden</title>
           <meta name="description" content=""/>
           <meta name="og:description" content=""/>
           <meta name="keywords" content=""/>

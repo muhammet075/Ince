@@ -10,7 +10,7 @@ export default function Privacypolicy() {
   return (
     <>
       <Head>
-          <title>Privacy Policy</title>
+          <title>Stukadoorsbedrijf Ince - Privacy Policy</title>
           <meta name="description" content=""/>
           <meta name="og:description" content=""/>
           <meta name="keywords" content=""/>

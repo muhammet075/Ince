@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-          <title>Next</title>
+          <title>Stukadoorsbedrijf Ince</title>
           <meta name="description" content=""/>
           <meta name="og:description" content=""/>
           <meta name="keywords" content=""/>

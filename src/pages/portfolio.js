@@ -10,7 +10,7 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-          <title>Portfolio</title>
+          <title>Stukadoorsbedrijf Ince - Portfolio</title>
           <meta name="description" content=""/>
           <meta name="og:description" content=""/>
           <meta name="keywords" content=""/>

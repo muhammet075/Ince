@@ -10,7 +10,7 @@ export default function Cookiepolicy() {
   return (
     <>
       <Head>
-          <title>Cookie Policy</title>
+          <title>Stukadoorsbedrijf Ince - Cookie Policy</title>
           <meta name="description" content=""/>
           <meta name="og:description" content=""/>
           <meta name="keywords" content=""/>

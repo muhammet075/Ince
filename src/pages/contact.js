@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-          <title>Contact</title>
+          <title>Stukadoorsbedrijf Ince - Contact</title>
           <meta name="description" content=""/>
           <meta name="og:description" content=""/>
           <meta name="keywords" content=""/>
