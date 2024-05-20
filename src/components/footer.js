@@ -28,22 +28,23 @@ function Footer() {
           <li><Link href="/"><Image src={Logo} alt="Logo van Sukadoorsbedrijf Ince"/></Link></li>
           <li><b>E-Mail:</b> info@incestukadoor.nl</li>
           <li><b>Telefoon:</b> 075-1234567</li>
-          <li><b>KVK:</b> 0000001</li>
-          <li><b>BTW:</b> NL00001</li>
-          <li><b>Adres:</b> Teststraat 12<br/> 1440AS Assendelft</li>
+          <li><b>KVK:</b> 80027814</li>
+          <li><b>BTW:</b> NL003387007B36</li>
+          <li><b>IBAN:</b> NL33ABNA0882110691</li>
+          <li><b>Adres:</b> Kralingen 124<br/> 1566CC Assendelft</li>
         </ul>
 
         <ul>
           <li><h2>Pagina's</h2></li>
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/overons">Over ons</Link></li>
-          <li><Link href="/">Portfolio</Link></li>
-          <li><Link href="/">Contact</Link></li>
-          <li><Link href="/">Offerte</Link></li>
-          <li><Link href="/">Algemene Voorwaarden</Link></li>
-          <li><Link href="/">Privacy Policy</Link></li>
-          <li><Link href="/">Cookie Policy</Link></li>
-          <li><Link href="/">Sitemap</Link></li>
+          <li><Link href="/over-ons">Over ons</Link></li>
+          <li><Link href="/portfolio">Portfolio</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
+          <li><Link href="/offerte">Offerte</Link></li>
+          <li><Link href="/algemene-voorwaarden">Algemene Voorwaarden</Link></li>
+          <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+          <li><Link href="/cookie-policy">Cookie Policy</Link></li>
+          <li><Link target="_blank" href="/sitemap.xml">Sitemap</Link></li>
         </ul>
 
         <ul>

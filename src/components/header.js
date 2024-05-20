@@ -150,7 +150,7 @@ function Header() {
               </ul>
             </li>
             <li><Link href="/portfolio" id="nav3" onClick={closeHamburger}>Portfolio</Link></li>
-            <li><Link href="/overons" onClick={closeHamburger}>Over ons</Link></li>
+            <li><Link href="/over-ons" onClick={closeHamburger}>Over ons</Link></li>
             <li><Link href="/contact" id="nav4" onClick={closeHamburger}>Contact</Link></li>
             <li className="calltoactionheader"><Link href="/offerte" id="nav5" onClick={closeHamburger}>Offerte</Link></li>
           </ul>
