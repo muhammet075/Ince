@@ -2,10 +2,8 @@ import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "@/styles/overons.module.css";
 import inceAuto1 from "@/assets/img/inceauto1.png";
 import inceAuto2 from "@/assets/img/inceauto2.png";
-
 
 export default function Overons() {
   useEffect(() => {
