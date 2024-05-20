@@ -138,15 +138,15 @@ function Header() {
             >
               <Link href="#" id="nav2">Diensten</Link>
               <ul className={"submenu" + " " + `${styles.submenu} ${isSubmenuVisible ? '' : 'displaynone'}`}>
-                <li><Link onClick={closeHamburger} href="/">Stucwerk Binnen en Buiten</Link></li>
-                <li><Link onClick={closeHamburger} href="/">Wanden en Plafonds Stucen</Link></li>
-                <li><Link onClick={closeHamburger} href="/">Schilderklaar Stucen</Link></li>
-                <li><Link onClick={closeHamburger} href="/">Behangklaar Stucen</Link></li>
-                <li><Link onClick={closeHamburger} href="/">Spachtelputz Stucen (Fijne Korrel)</Link></li>
-                <li><Link onClick={closeHamburger} href="/">Aquastuc en Zandcement voor Badkamers</Link></li>
-                <li><Link onClick={closeHamburger} href="/">Schilderwerk Binnen en Buiten</Link></li>
-                <li><Link onClick={closeHamburger} href="/">Wanden en Plafonds Schilderen</Link></li>
-                <li><Link onClick={closeHamburger} href="/">Deuren, Kozijnen en Houtwerk Schilderen</Link></li>
+                <li><Link onClick={closeHamburger} href="/stucwerk-binnen-en-buiten">Stucwerk Binnen en Buiten</Link></li>
+                <li><Link onClick={closeHamburger} href="/wanden-en-plafonds-stucen">Wanden en Plafonds Stucen</Link></li>
+                <li><Link onClick={closeHamburger} href="/schilderklaar-stucen">Schilderklaar Stucen</Link></li>
+                <li><Link onClick={closeHamburger} href="/behangklaar-stucen">Behangklaar Stucen</Link></li>
+                <li><Link onClick={closeHamburger} href="/spachtelputz-stucen-fijne-korrel">Spachtelputz Stucen (Fijne Korrel)</Link></li>
+                <li><Link onClick={closeHamburger} href="/aquastuc-en-zandcement-voor-badkamers">Aquastuc en Zandcement voor Badkamers</Link></li>
+                <li><Link onClick={closeHamburger} href="/schilderwerk-binnen-en-buiten">Schilderwerk Binnen en Buiten</Link></li>
+                <li><Link onClick={closeHamburger} href="/wanden-en-plafonds-schilderen">Wanden en Plafonds Schilderen</Link></li>
+                <li><Link onClick={closeHamburger} href="/deuren-kozijnen-en-houtwerk-schilderen">Deuren, Kozijnen en Houtwerk Schilderen</Link></li>
               </ul>
             </li>
             <li><Link href="/portfolio" id="nav3" onClick={closeHamburger}>Portfolio</Link></li>

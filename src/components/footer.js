@@ -49,28 +49,28 @@ function Footer() {
 
         <ul>
           <li><h2>Diensten</h2></li>
-          <li><Link href="/">Stucwerk Binnen en Buiten</Link></li>
-          <li><Link href="/">Wanden en Plafonds Stucen</Link></li>
-          <li><Link href="/">Schilderklaar Stucen</Link></li>
-          <li><Link href="/">Behangklaar Stucen</Link></li>
-          <li><Link href="/">Spachtelputz Stucen (Fijne Korrel)</Link></li>
-          <li><Link href="/">Aquastuc en Zandcement voor Badkamers</Link></li>
-          <li><Link href="/">Schilderwerk Binnen en Buiten</Link></li>
-          <li><Link href="/">Wanden en Plafonds Schilderen</Link></li>
-          <li><Link href="/">Deuren, Kozijnen en Houtwerk Schilderen</Link></li>
+          <li><Link href="/stucwerk-binnen-en-buiten">Stucwerk Binnen en Buiten</Link></li>
+          <li><Link href="/wanden-en-plafonds-stucen">Wanden en Plafonds Stucen</Link></li>
+          <li><Link href="/schilderklaar-stucen">Schilderklaar Stucen</Link></li>
+          <li><Link href="/behangklaar-stucen">Behangklaar Stucen</Link></li>
+          <li><Link href="/spachtelputz-stucen-fijne-korrel">Spachtelputz Stucen (Fijne Korrel)</Link></li>
+          <li><Link href="/aquastuc-en-zandcement-voor-badkamers">Aquastuc en Zandcement voor Badkamers</Link></li>
+          <li><Link href="/schilderwerk-binnen-en-buiten">Schilderwerk Binnen en Buiten</Link></li>
+          <li><Link href="/wanden-en-plafonds-schilderen">Wanden en Plafonds Schilderen</Link></li>
+          <li><Link href="/deuren-kozijnen-en-houtwerk-schilderen">Deuren, Kozijnen en Houtwerk Schilderen</Link></li>
         </ul>
 
         <ul>
           <li><h2>Locaties</h2></li>
-          <li><Link href="/">Stukadoor Zaandam</Link></li>
-          <li><Link href="/">Stukadoor Koog aan de Zaan</Link></li>
-          <li><Link href="/">Stukadoor Zaandijk</Link></li>
-          <li><Link href="/">Stukadoor Wormerveer</Link></li>
-          <li><Link href="/">Stukadoor Krommenie</Link></li>
-          <li><Link href="/">Stukadoor Assendelft</Link></li>
-          <li><Link href="/">Stukadoor Wormer</Link></li>
-          <li><Link href="/">Stukadoor Amsterdam</Link></li>
-          <li><Link href="/">Stukadoor Haarlem</Link></li>
+          <li><Link href="/stukadoor-zaandam">Stukadoor Zaandam</Link></li>
+          <li><Link href="/stukadoor-koog-aan-de-zaan">Stukadoor Koog aan de Zaan</Link></li>
+          <li><Link href="/stukadoor-zaandijk">Stukadoor Zaandijk</Link></li>
+          <li><Link href="/stukadoor-wormerveer">Stukadoor Wormerveer</Link></li>
+          <li><Link href="/stukadoor-krommenie">Stukadoor Krommenie</Link></li>
+          <li><Link href="/stukadoor-assendelft">Stukadoor Assendelft</Link></li>
+          <li><Link href="/stukadoor-wormer">Stukadoor Wormer</Link></li>
+          <li><Link href="/stukadoor-amsterdam">Stukadoor Amsterdam</Link></li>
+          <li><Link href="/stukadoor-haarlem">Stukadoor Haarlem</Link></li>
         </ul>
 
         </div>
