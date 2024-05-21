@@ -100,6 +100,10 @@
     transition: 0.2s ease;
 }
 
+.header > div:nth-of-type(2) > section ul:nth-of-type(1) li:last-child{
+    margin-right: 0;
+}
+
 .header > div:nth-of-type(1) > div > div:nth-of-type(1){
     height: fit-content;
     width: fit-content;
