@@ -449,13 +449,13 @@ button{
 
 
 .activestap{
-  color: var(--accent1) !important;
+  color: #00ec2d !important;
   font-weight: 500 !important;
 }
 
 .activestap p:first-child{
-  background-color: var(--accent1) !important;
-  color: #ffff !important;
+  background-color: #00ec2d !important;
+  color: #000 !important;
   width: 20px;
   height: 20px;
   display: flex;
@@ -473,7 +473,19 @@ button{
   bottom: 85px;
 }
 
+@media only screen and (max-width: 850px) {
+  .offerteerror{
+    bottom: 65px;
+    left: 25px;
+    font-size: 13px;
+  }
+}
+
 .gekozenstap{
   background-color: var(--accent2) !important;
   border: 1.5px solid var(--accent1) !important;
+}
+
+.notselected{
+  border: 1.5px solid #f60000 !important;
 }
