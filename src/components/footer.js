@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/footer.module.css";
 import Logo from "@/assets/img/ince-logo.svg";
+import Altinweb from "@/assets/img/altinweb-logo.svg";
+import WhatsApp from "@/assets/icons/whatsapp.svg";
 
 function Footer() {
   return (
@@ -77,7 +79,15 @@ function Footer() {
       </div>
 
 
+      <div>
+        <div>
+          <p>&copy; {new Date().getFullYear()} Copyright - Stukadoorsbedrijf Ince</p>
+          <span>Website ontwikkeling door <Link href="https://altinweb.nl/" target="_blank">Altinweb</Link> <Image src={Altinweb} alt="Logo van Altinweb"/></span>
+        </div>
+      </div>
 
+
+      <Link target="_blank" href="https://api.whatsapp.com/send/?phone=32488189000" rel="noopener" id="whatsappbtn"><Image src={WhatsApp} alt="WhatsApp icoon"/></Link>
     </footer>
   );
 }

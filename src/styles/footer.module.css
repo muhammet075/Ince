@@ -3,6 +3,32 @@
     margin-top: 100px;
 }
 
+.footer > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 53px;
+    height: 53px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    background: #25d366;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .07), 0 2px 4px rgba(0, 0, 0, .07), 0 4px 8px rgba(0, 0, 0, .07), 0 8px 16px rgba(0, 0, 0, .07), 0 16px 32px rgba(0, 0, 0, .07), 0 32px 64px rgba(0, 0, 0, .07);    
+}
+
+.footer > a:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.footer > a > img{
+    width: 35px;
+    height: auto;
+    margin: auto;
+}
+
 .footer > div:nth-of-type(1){
     background-image: url("/schilderen4.jpg");
     background-position: 50% 25%;
@@ -134,7 +160,38 @@
     margin-bottom: 15px;
 }
 
+.footer > div:nth-of-type(3) > div{
+    max-width: 1200px;
+    padding: 15px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
 
+.footer > div:nth-of-type(3) > div p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.footer > div:nth-of-type(3) > div span{
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.footer > div:nth-of-type(3) > div span a{
+    margin: 0 5px;
+    color: #ecb102;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.footer > div:nth-of-type(3) > div span img{
+    width: 45px;
+    height: auto;
+}
 
 
 
@@ -150,6 +207,10 @@
 
     .footer > div:nth-of-type(2) > div{
         padding: 75px 15px;
+    }
+
+    .footer > div:nth-of-type(3) > div{
+        padding: 15px;
     }
 }
 
@@ -196,7 +257,13 @@
     }
 }
 
-
+@media only screen and (max-width: 650px) {
+    .footer > div:nth-of-type(3) > div{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .footer > div:nth-of-type(1){
