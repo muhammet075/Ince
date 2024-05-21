@@ -6,8 +6,10 @@ import Link from "next/link";
 export default function Portfolio() {
   useEffect(() => {
     setTimeout(() => {
-      document.querySelector("#loadingstate").classList.add("displaynone");
-      document.querySelector("#portfoliowidget").classList.remove("opacity0");
+      try{
+        document.querySelector("#loadingstate").classList.add("displaynone");
+        document.querySelector("#portfoliowidget").classList.remove("opacity0");
+      } catch(e){}
     }, 1500);
   });
 
