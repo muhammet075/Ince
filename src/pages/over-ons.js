@@ -44,7 +44,7 @@ export default function Overons() {
               <p>De oprichting van Stukadoorsbedrijf Ince was een natuurlijke voortzetting van onze passie voor de bouw en ons streven naar perfectie. Vanaf het begin hebben we ons gericht op het leveren van uitzonderlijke diensten, waarbij elk project – groot of klein – met dezelfde toewijding en aandacht voor detail werd benaderd. Onze missie was en is om onze klanten de best mogelijke afwerking en service te bieden, en dit streven heeft ons geholpen om ons te onderscheiden in een competitieve markt.</p>
             </section>
             <section>
-              <Image src={inceAuto1} alt="Bedrijfswagens van Stukadoorsbedrijf Ince"/>
+              <Image src={inceAuto2} alt="Bedrijfswagens van Stukadoorsbedrijf Ince"/>
             </section>
           </div>
 
@@ -64,7 +64,7 @@ export default function Overons() {
               <p>Tijdens deze bespreking nemen we ook de tijd om onze werkwijze en de verschillende mogelijkheden die wij bieden toe te lichten. We bespreken materialen, technieken, en afwerkingsopties, en geven professioneel advies om de beste resultaten te bereiken. Deze open communicatie zorgt ervoor dat zowel wij als de klant precies weten wat er verwacht wordt en welke stappen er genomen moeten worden.</p>
             </section>
             <section>
-              <Image src={inceAuto2} alt="Bedrijfswagens van Stukadoorsbedrijf Ince"/>
+              <Image src={inceAuto1} alt="Bedrijfswagens van Stukadoorsbedrijf Ince"/>
             </section>
           </div>
 

@@ -86,8 +86,8 @@ function Footer() {
         </div>
       </div>
 
-
       <Link target="_blank" href="https://api.whatsapp.com/send/?phone=32488189000" rel="noopener" id="whatsappbtn"><Image src={WhatsApp} alt="WhatsApp icoon"/></Link>
+      
     </footer>
   );
 }
