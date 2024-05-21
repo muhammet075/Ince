@@ -5,6 +5,10 @@ import Link from "next/link";
 
 export default function Portfolio() {
   useEffect(() => {
+    setTimeout(() => {
+      document.querySelector("#loadingstate").classList.add("displaynone");
+      document.querySelector("#portfoliowidget").classList.remove("opacity0");
+    }, 1500);
   });
 
   return (
@@ -36,7 +40,10 @@ export default function Portfolio() {
         <div>
 
           <div>
-            <section>
+            <section id="loadingstate">
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </section>
+            <section id="portfoliowidget" className="opacity0">
               <div class="elfsight-app-cea52630-dcc5-450e-9fed-506f0dbdd15b" data-elfsight-app-lazy></div>
             </section>
           </div>
