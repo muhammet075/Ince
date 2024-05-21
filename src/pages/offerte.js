@@ -65,7 +65,6 @@ export default function Offerte() {
       document.querySelector("#offerstestap1").classList.add("displaynone");
       document.querySelector("#offerstestap2").classList.remove("displaynone");
       document.querySelector('#offerteform').scrollIntoView({ behavior: 'smooth' });
-      document.querySelector("#vierkantemeter").focus();
     }
   }
 
