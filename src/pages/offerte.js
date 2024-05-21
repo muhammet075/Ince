@@ -306,7 +306,7 @@ export default function Offerte() {
             </li>
             <li id="stap3">
               <p>3</p>
-              <p>Hoe wilt u het hebben?</p>
+              <p>Hoe moeten wij het stucen?</p>
             </li>
             <li id="stap4">
               <p>4</p>
@@ -314,7 +314,7 @@ export default function Offerte() {
             </li>
             <li id="stap5">
               <p>5</p>
-              <p>Offerte Afronden</p>
+              <p>Afronden</p>
             </li>
           </ul>
         </div>
@@ -322,7 +322,7 @@ export default function Offerte() {
         <div>
         
           <section id="offerstestap1">
-            <h2>Kies uw type woning</h2>  
+            <h2>1. Kies uw type woning</h2>  
             <p>Heeft u een nieuwbouw woning of wilt u uw woning renoveren?</p>
 
             <ul>
@@ -345,7 +345,7 @@ export default function Offerte() {
 
 
           <section id="offerstestap2" className="displaynone">
-            <h2>Wat moeten wij stucen?</h2>
+            <h2>2. Wat moeten wij stucen?</h2>
             <p>Meerdere keuzes mogelijk.</p>
 
             <ul>
@@ -373,7 +373,7 @@ export default function Offerte() {
 
 
           <section id="offerstestap3" className="displaynone">
-            <h2>Hoe moeten wij het stucen?</h2>
+            <h2>3. Hoe moeten wij het stucen?</h2>
             <p>Meerdere keuzes mogelijk.</p>
 
             <ul>
@@ -403,7 +403,7 @@ export default function Offerte() {
 
 
           <section id="offerstestap4" className="displaynone">
-            <h2>Wat moet er geschilderd worden?</h2>
+            <h2>4. Wat moet er geschilderd worden?</h2>
             <p>Meerdere keuzes mogelijk.</p>
 
             <ul>
@@ -448,7 +448,7 @@ export default function Offerte() {
 
 
           <section id="offerstestap5" className="displaynone">
-            <h2>Afronden</h2>
+            <h2>5. Afronden</h2>
             <p>Voer uw gegevens in.</p>
 
             <ul>

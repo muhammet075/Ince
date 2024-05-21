@@ -12,7 +12,7 @@
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 15px;
     list-style: none;
@@ -20,24 +20,11 @@
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) ul li{
     display: flex;
-    gap: 5px;
-    font-size: 13px;
-    margin-right: 60px;
+    gap: 3px;
+    font-size: 12px;
     position: relative;
     color: #afafaf;
     font-weight: 500;
-}
-
-.offerte > div:nth-of-type(1) > div:nth-of-type(1) ul li::before{
-    content: "";
-    width: 40px;
-    height: 1px;
-    background-color: #afafaf;
-    position: absolute;
-    right: -50px;
-    bottom: 0;
-    top: 0;
-    margin: auto;
 }
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(1) ul li:last-child{
@@ -59,7 +46,7 @@
 
 
 .offerte > div:nth-of-type(1) > div:nth-of-type(2) section h2{
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 
