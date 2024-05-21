@@ -23,6 +23,14 @@ import greenCheck from "@/assets/icons/greencheck.svg";
 export default function Offerte() {
 
   useEffect(() => {
+
+    if (sessionStorage.getItem("offerteverstuurd") === "ja"){
+      document.querySelector("#stap1").classList.remove("activestap");
+      document.querySelector("#stap5").classList.add("activestap");
+      document.querySelector("#offerstestap1").classList.add("displaynone");
+      document.querySelector("#successtate").classList.remove("displaynone");
+    }
+
   });
 
   function isValidEmail(email) {
@@ -57,6 +65,7 @@ export default function Offerte() {
       document.querySelector("#offerstestap1").classList.add("displaynone");
       document.querySelector("#offerstestap2").classList.remove("displaynone");
       document.querySelector('#offerteform').scrollIntoView({ behavior: 'smooth' });
+      document.querySelector("#vierkantemeter").focus();
     }
   }
 
@@ -294,8 +303,16 @@ export default function Offerte() {
     const startdatum = document.querySelector("#startdatum").value.trim();
     const antwoord = document.querySelector("#antwoordform").value.trim();
 
+    let vierkantemeter;
     let bedrijfsnaam;
     let bestand;
+    let toelichting;
+
+    if (document.querySelector("#vierkantemeter").value.lenght === 0){ 
+      vierkantemeter = "Onbekend";
+    } else{
+      vierkantemeter = document.querySelector("#vierkantemeter").value.trim();
+    }
 
     if (document.querySelector("#bedrijfsnaam").value.lenght === 0){ 
       bedrijfsnaam = "Niet van toepassing";
@@ -308,6 +325,13 @@ export default function Offerte() {
     } else{
       bestand = document.querySelector("#bestand").value;
     }
+
+    if (document.querySelector("#toelichting").value.lenght === 0){ 
+      toelichting = "Niet van toepassing";
+    } else{
+      toelichting = document.querySelector("#toelichting").value.trim();;
+    }
+
 
 
 
@@ -362,6 +386,8 @@ export default function Offerte() {
         woonplaats: woonplaats,
         startdatum: startdatum,
         bestand: bestand,
+        toelichting: toelichting,
+        vierkantemeter: vierkantemeter,
       }
 
       const emailData = {
@@ -385,6 +411,8 @@ export default function Offerte() {
         document.querySelector("#loadingstate").classList.add("displaynone");
         document.querySelector("#successtate").classList.remove("displaynone");
         document.querySelector('#offerteform').scrollIntoView({ behavior: 'smooth' });
+        
+        sessionStorage.setItem("offerteverstuurd", "ja");
       }, 2000);
 
     }
@@ -501,6 +529,15 @@ export default function Offerte() {
               <li>
                 <input type="checkbox" id="plafondscheckbox" class="muursoort" name="muursoort" value="Plafonds" onClick={stap2Uitvoeren}/>
                 <label for="plafondscheckbox" id="plafonds"><Image src={Plafond} alt="Plafond icoon"/>Plafonds</label>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <p>Totaal m² oppervalkte wat gestuct moet worden</p>
+                <span><input type="text" id="vierkantemeter" placeholder="Oppervalkte" maxLength={5} onChange={restrictToNumbers} onClick={stap5Uitvoeren}></input><p>m²</p></span>
+                <p>- Lengte x hoogte van alle muren, inclusief de ramen, kozijnen en deuren</p>
+                <p>- Als de oppervlakte in m² onbekend is, kan dit veld worden overgeslagen</p>
               </li>
            </ul>
 
@@ -626,6 +663,10 @@ export default function Offerte() {
               <li>
                 <p>Optoneel: Foto van uw woning</p>
                 <span><input multiple="multiple" id="bestand" type="file" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.pdf,application/pdf,.jpg,.jpeg,image/jpeg,.png,image/png,.gif,image/gif"/></span>
+              </li>
+              <li>
+                <p>Optoneel: Toelichting over de werkzaamheden</p>
+                <span><textarea id="toelichting" placeholder="Voorbeeld: de muren moeten eerst gestuct worden en daarna rood geverd worden, etc."></textarea></span>
               </li>
               <li>
                 <p>*Anti Spam</p>

@@ -455,7 +455,9 @@ button{
 .activestap{
   color: #00ec2d !important;
   font-weight: 500 !important;
-}
+  margin-bottom: 2px !important;
+  border-bottom: 2px solid #00ec2d !important;
+} 
 
 .activestap p:first-child{
   background-color: #00ec2d !important;
@@ -478,6 +480,14 @@ button{
 }
 
 @media only screen and (max-width: 850px) {
+  .activestap{
+    margin-bottom: 6px !important;
+  }
+
+  .activestap p:first-child{
+    width: 20px !important;
+  }
+
   .offerteerror{
     bottom: 65px;
     left: 25px;
