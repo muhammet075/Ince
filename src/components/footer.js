@@ -15,7 +15,7 @@ function Footer() {
               <h3>Geïnteresseerd in onze diensten?</h3>
               <div>
                 <Link href="/offerte">Offerte aanvragen</Link>
-                <Link href="/contact">Contact</Link>
+                <Link href="/portfolio">Portfolio</Link>
               </div>
             </section>
           </div>
@@ -63,7 +63,7 @@ function Footer() {
         </ul>
 
         <ul>
-          <li><h2>Locaties</h2></li>
+          <li><h2>Populaire Locaties</h2></li>
           <li><Link href="/stukadoor-zaandam">Stukadoor Zaandam</Link></li>
           <li><Link href="/stukadoor-koog-aan-de-zaan">Stukadoor Koog aan de Zaan</Link></li>
           <li><Link href="/stukadoor-zaandijk">Stukadoor Zaandijk</Link></li>

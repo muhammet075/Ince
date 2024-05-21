@@ -5,6 +5,8 @@ import Image from "next/image";
 import styles from "@/styles/offerte.module.css";
 import emailjs from "@emailjs/browser";
 
+import Reviews from "@/components/reviews";
+
 import Renovatie from "@/assets/offerteicons/renovatie.svg";
 import Nieuwbouw from "@/assets/offerteicons/nieuwbouw.svg";
 import Plafond from "@/assets/offerteicons/plafond.svg";
@@ -706,6 +708,8 @@ export default function Offerte() {
         </div>
         <div></div>
       </div>
+
+      <Reviews/>
     </>
   );
 }

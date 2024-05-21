@@ -1,6 +1,6 @@
 .offerte{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 150px auto;
     padding-top: 50px;
     display: flex;
 }

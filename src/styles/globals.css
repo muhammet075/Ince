@@ -240,6 +240,44 @@ button{
   background-image: url("/schilderen2.jpg");
 }
 
+.zaandam{
+  background-image: url("/zaandam.jpg");
+}
+
+.haarlem{
+  background-image: url("/haarlem.jpg");
+}
+
+.koogaandezaan{
+  background-image: url("/koogaandezaan.jpg");
+}
+
+.zaandijk{
+  background-image: url("/zaandijk.jpg");
+}
+
+.wormer{
+  background-image: url("/wormer.jpg");
+}
+
+.amsterdam{
+  background-image: url("/amsterdam.jpg");
+}
+
+.krommenie{
+  background-image: url("/krommenie.jpg");
+}
+
+.assendelft{
+  background-image: url("/assendelft.jpg");
+}
+
+.wormerveer{
+  background-image: url("/wormerveer.jpg");
+}
+
+
+
 
 
 
@@ -351,16 +389,16 @@ button{
 }
 
 .pagelayout > div > div section h2{
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 500;
-  color: var(--accent1);
+  color: #000;
   margin-bottom: 5px;
 }
 
 .pagelayout > div > div section h3{
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 500;
-  color: var(--accent1);
+  color: #000;
   margin-bottom: 5px;
 }
 
