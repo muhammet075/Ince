@@ -30,6 +30,12 @@
     position: relative;
 }
 
+.homediensten > div:nth-of-type(1) > div > a:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease;
+}
+
+
 .homediensten > div:nth-of-type(1) > div > a > img{
     width: 100%;
     height: auto;
@@ -42,12 +48,18 @@
     left: 25px;
     font-size: 20px;
     font-weight: 500;
-    background: var(--accent1);
+    background-color: var(--accent1);
     color: #ffff;
     padding: 7px 0;
     width: 200px;
     text-align: center;
     border-radius: 25px;
+}
+
+.homediensten > div:nth-of-type(1) > div > a:hover > p{
+    color: var(--accent1);
+    background-color: #ffff;
+    transition: 0.2s ease;
 }
 
 .homediensten > div:nth-of-type(2){
