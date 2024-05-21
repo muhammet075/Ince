@@ -207,6 +207,37 @@ button{
   background-image: url(https://cdn.uwstukadoors.nl/images/plasterer-2-1.jpg);
 }
 
+.stucwerkbinnenenbuiten, .behangklaarstucen{
+  background-image: url("/stukken1.jpg");
+}
+
+.wandenenplafondsstucen, .spachtelputzstucenfijnekorrel{
+  background-image: url("/stukken2.jpg");
+}
+
+.aquastucenzandcementvoorbadkamers{
+  background-image: url("/stukken3.jpg");
+}
+
+.schilderklaarstucen{
+  background-image: url("/stukken4.jpg");
+}
+
+.schilderwerkbinnenenbuiten{
+  background-image: url("/schilderen3.jpg");
+}
+
+.wandenenplafondsschilderen{
+  background-image: url("/schilderen1.jpg");
+}
+
+.deurenkozijnenenhoutwerkschilderen{
+  background-image: url("/schilderen2.jpg");
+}
+
+
+
+
 .pagehero > div{
   width: 100%;
   height: 100%;
