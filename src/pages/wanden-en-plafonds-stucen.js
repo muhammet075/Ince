@@ -25,7 +25,7 @@ export default function WandenEnPlafondsStucen() {
         <div>
           <div>
             <section>
-              <h1>Wanden en Plafonds Stucen</h1>
+              <h1 className="kleineh1">Wanden en Plafonds Stucen</h1>
               <ul className="breadcrumb">
                 <li><Link href="/">Home</Link></li>
                 <li>Wanden en Plafonds Stucen</li>

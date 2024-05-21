@@ -25,7 +25,7 @@ export default function WandenEnPlafondsSchilderen() {
         <div>
           <div>
             <section>
-              <h1>Wanden en Plafonds Schilderen</h1>
+              <h1 className="kleineh1">Wanden en Plafonds Schilderen</h1>
               <ul className="breadcrumb">
                 <li><Link href="/">Home</Link></li>
                 <li>Wanden en Plafonds Schilderen</li>

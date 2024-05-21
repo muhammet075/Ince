@@ -351,15 +351,15 @@ button{
 }
 
 @media only screen and (max-width: 880px) {
-  .pagehero > div > div section h1{
-    font-size: 36px;
+  .kleineh1{
+    font-size: 36px !important;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .pagehero > div > div section h1{
-    font-size: 25px;
-    line-height: 35px;
+  .kleineh1{
+    font-size: 25px !important;
+    line-height: 35px !important;
   }
 
   .pagehero > div > div section ul{

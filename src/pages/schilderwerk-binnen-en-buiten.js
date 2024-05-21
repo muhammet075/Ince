@@ -25,7 +25,7 @@ export default function SchilderwerkBinnenEnBuiten() {
         <div>
           <div>
             <section>
-              <h1>Schilderwerk Binnen en Buiten</h1>
+              <h1 className="kleineh1">Schilderwerk Binnen en Buiten</h1>
               <ul className="breadcrumb">
                 <li><Link href="/">Home</Link></li>
                 <li>Schilderwerk Binnen en Buiten</li>

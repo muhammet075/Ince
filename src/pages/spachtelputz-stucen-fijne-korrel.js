@@ -24,7 +24,7 @@ export default function SpachtelputzStucenFijneKorrel() {
         <div>
           <div>
             <section>
-              <h1>Spachtelputz Stucen (Fijne Korrel)</h1>
+              <h1 className="kleineh1">Spachtelputz Stucen (Fijne Korrel)</h1>
               <ul className="breadcrumb">
                 <li><Link href="/">Home</Link></li>
                 <li>Spachtelputz Stucen (Fijne Korrel)</li>
