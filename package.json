@@ -2,7 +2,7 @@
   "name": "Ince",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ince.nl/",
+  "homepage": "https://stukadoorsbedrijfince.nl/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",

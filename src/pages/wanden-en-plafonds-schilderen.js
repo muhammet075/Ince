@@ -17,7 +17,7 @@ export default function WandenEnPlafondsSchilderen() {
         <meta name="description" content="Stukadoorsbedrijf Ince biedt professioneel schilderwerk voor wanden en plafonds. Voor een strakke, duurzame afwerking en een frisse uitstraling van uw interieur."/>
         <meta name="og:description" content="Professioneel schilderwerk voor wanden en plafonds bij Stukadoorsbedrijf Ince. Hoogwaardige afwerking en kleuradvies voor een perfect resultaat."/>
         <meta name="keywords" content="wanden schilderen, plafonds schilderen, schilderwerk, professioneel schilderen, binnenschilderwerk, schildertechnieken, kleuradvies, interieur schilderen"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/wanden-en-plafonds-schilderen"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/wanden-en-plafonds-schilderen"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Wanden en Plafonds Schilderen"/>
       </Head>
 

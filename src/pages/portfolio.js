@@ -20,7 +20,7 @@ export default function Portfolio() {
         <meta name="description" content="Bekijk het portfolio van Stukadoorsbedrijf Ince en ontdek onze uitgevoerde projecten in stucwerk, schilderwerk en meer. Krijg inspiratie voor uw eigen projecten!"/>
         <meta name="og:description" content="Bekijk het portfolio van Stukadoorsbedrijf Ince en ontdek onze uitgevoerde projecten in stucwerk, schilderwerk en meer. Krijg inspiratie voor uw eigen projecten!"/>
         <meta name="keywords" content="portfolio, stukadoorsbedrijf ince, stucwerk, schilderwerk, projecten, inspiratie"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/portfolio"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/portfolio"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Portfolio"/>
       </Head>
 

@@ -63,6 +63,10 @@ button{
   display: none !important;
 }
 
+.fixedheader > div:nth-of-type(2) > a img{
+  max-width: 150px !important;
+}
+
 .swiper-button-next, .swiper-button-prev{
   color: var(--accent1) !important;
 }

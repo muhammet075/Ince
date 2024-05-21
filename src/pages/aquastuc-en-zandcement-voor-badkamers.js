@@ -17,7 +17,7 @@ export default function AquastucEnZandcementVoorBadkamers() {
         <meta name="description" content="Stukadoorsbedrijf Ince biedt duurzame en waterbestendige afwerkingen met aquastuc en zandcement voor badkamers. Ideaal voor vochtige omgevingen, met een strakke en professionele afwerking."/>
         <meta name="og:description" content="Ontdek de voordelen van aquastuc en zandcement voor badkamers bij Stukadoorsbedrijf Ince. Waterbestendige en duurzame oplossingen voor een perfecte afwerking."/>
         <meta name="keywords" content="aquastuc, zandcement, badkamers stucen, waterbestendige stuc, vochtbestendig stucwerk, badkamer renovatie, duurzame badkamer afwerking, stucwerk voor natte ruimtes"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/aquastuc-en-zandcement-voor-badkamers"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/aquastuc-en-zandcement-voor-badkamers"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Aquastuc en Zandcement voor Badkamers"/>
       </Head>
 

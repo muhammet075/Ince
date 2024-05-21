@@ -17,7 +17,7 @@ export default function WandenEnPlafondsStucen() {
         <meta name="description" content="Stukadoorsbedrijf Ince biedt professionele stucwerkdiensten voor wanden en plafonds. Ontdek de voordelen van glad pleisterwerk en sierpleister voor een perfecte afwerking."/>
         <meta name="og:description" content="Professioneel stucwerk voor wanden en plafonds bij Stukadoorsbedrijf Ince. Hoogwaardige afwerking en duurzame bescherming voor een strakke uitstraling van uw interieur."/>
         <meta name="keywords" content="wanden stucen, plafonds stucen, stukadoorsbedrijf, glad pleisterwerk, sierpleister, binnenmuren stucen, plafonds pleisteren, stucwerk technieken, hoogwaardige afwerking"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/wanden-en-plafonds-stucen"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/wanden-en-plafonds-stucen"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Wanden en Plafonds Stucen"/>
       </Head>
 

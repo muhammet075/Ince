@@ -17,7 +17,7 @@ export default function DeurenKozijnenEnHoutwerkSchilderen() {
         <meta name="description" content="Professioneel schilderwerk voor deuren, kozijnen en houtwerk bij Stukadoorsbedrijf Ince. Voor een strakke afwerking en duurzame bescherming. Vraag een offerte aan!"/>
         <meta name="og:description" content="Ontdek de voordelen van professioneel schilderwerk voor deuren, kozijnen en houtwerk bij Stukadoorsbedrijf Ince. Hoogwaardige afwerking en onderhoud."/>
         <meta name="keywords" content="deuren schilderen, kozijnen schilderen, houtwerk schilderen, professioneel schilderwerk, houtwerk onderhoud, schildertechnieken, buitenschilderwerk, binnenschilderwerk"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/deuren-kozijnen-houtwerk-schilderen"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/deuren-kozijnen-houtwerk-schilderen"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Deuren, Kozijnen en Houtwerk Schilderen"/>
       </Head>
 

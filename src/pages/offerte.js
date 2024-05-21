@@ -404,14 +404,14 @@ export default function Offerte() {
 
   return (
     <>
-      <Head>
-          <title>Stukadoorsbedrijf Ince - Offerte</title>
-          <meta name="description" content=""/>
-          <meta name="og:description" content=""/>
-          <meta name="keywords" content=""/>
-          <meta property="og:url" content=""/>
-          <meta property="og:title" content=""/>
-      </Head>
+    <Head>
+        <title>Stukadoorsbedrijf Ince - Offerte</title>
+        <meta name="description" content="Vraag nu een offerte aan bij Stukadoorsbedrijf Ince voor hoogwaardig stucwerk, schilderwerk en meer. Ontvang een nauwkeurige en vrijblijvende prijsopgave voor uw project."/>
+        <meta name="og:description" content="Vraag nu een offerte aan bij Stukadoorsbedrijf Ince voor hoogwaardig stucwerk, schilderwerk en meer. Ontvang een nauwkeurige en vrijblijvende prijsopgave voor uw project."/>
+        <meta name="keywords" content="offerte, stukadoorsbedrijf ince, stucwerk, schilderwerk, prijsopgave"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/offerte"/>
+        <meta property="og:title" content="Stukadoorsbedrijf Ince - Offerte"/>
+    </Head>
 
       <div className="pagehero offertepage">
         <div>

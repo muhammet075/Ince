@@ -16,7 +16,7 @@ export default function SpachtelputzStucenFijneKorrel() {
         <meta name="description" content="Stukadoorsbedrijf Ince biedt hoogwaardige Spachtelputz stucen met fijne korrel voor een decoratieve en duurzame afwerking. Ideaal voor binnen- en buitenmuren."/>
         <meta name="og:description" content="Spachtelputz stucen met fijne korrel bij Stukadoorsbedrijf Ince. Voor een decoratieve, duurzame en onderhoudsvriendelijke afwerking van uw muren en gevels."/>
         <meta name="keywords" content="Spachtelputz stucen, fijne korrel, stucwerk, decoratieve afwerking, duurzame stuc, binnenmuren stucen, buitenmuren stucen, gevels stucen, Spachtelputz technieken"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/spachtelputz-stucen-fijne-korrel"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/spachtelputz-stucen-fijne-korrel"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Spachtelputz Stucen (Fijne Korrel)"/>
       </Head>
 

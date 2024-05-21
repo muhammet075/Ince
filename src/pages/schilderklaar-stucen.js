@@ -15,7 +15,7 @@ export default function SchilderklaarStucen() {
         <meta name="description" content="Stukadoorsbedrijf Ince biedt professioneel schilderklaar stucen voor een perfecte, gladde basis. Ontdek de voordelen van schilderklaar stucen voor uw muren en plafonds."/>
         <meta name="og:description" content="Professioneel schilderklaar stucen bij Stukadoorsbedrijf Ince. Voor een strakke, gladde ondergrond klaar om geschilderd te worden. Ideaal voor nieuwbouw en renovatie."/>
         <meta name="keywords" content="schilderklaar stucen, stucwerk, muren stucen, plafonds stucen, schilderklaar, stukadoorsbedrijf, glad pleisterwerk, professionele afwerking, nieuwbouw stucen, renovatie stucen"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/schilderklaar-stucen"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/schilderklaar-stucen"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Schilderklaar Stucen"/>
       </Head>
 

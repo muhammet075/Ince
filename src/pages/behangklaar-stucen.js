@@ -16,7 +16,7 @@ export default function BehangklaarStucen() {
         <meta name="description" content="Stukadoorsbedrijf Ince biedt topkwaliteit behangklaar stucen voor een gladde, egale ondergrond. Perfect voor zowel nieuwbouw als renovatie, klaar voor direct behangen."/>
         <meta name="og:description" content="Behangklaar stucen bij Stukadoorsbedrijf Ince zorgt voor een perfecte ondergrond voor behang. Geschikt voor nieuwbouw en renovaties, met milieuvriendelijke materialen."/>
         <meta name="keywords" content="behangklaar stucen, stucwerk, muren stucen, behangklaar, stukadoorsbedrijf, glad pleisterwerk, professionele afwerking, nieuwbouw stucen, renovatie stucen, duurzame stucwerk"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/behangklaar-stucen"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/behangklaar-stucen"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Behangklaar Stucen"/>
       </Head>
 

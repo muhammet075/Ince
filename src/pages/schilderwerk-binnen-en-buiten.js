@@ -17,7 +17,7 @@ export default function SchilderwerkBinnenEnBuiten() {
         <meta name="description" content="Stukadoorsbedrijf Ince biedt professioneel schilderwerk binnen en buiten voor een perfecte afwerking en duurzame bescherming. Ontdek onze hoogwaardige schilderdiensten."/>
         <meta name="og:description" content="Professioneel schilderwerk binnen en buiten bij Stukadoorsbedrijf Ince. Voor een strakke afwerking en bescherming tegen de elementen. Vraag een offerte aan!"/>
         <meta name="keywords" content="schilderwerk binnen, schilderwerk buiten, professioneel schilderwerk, binnenschilderwerk, buitenschilderwerk, hoogwaardige schilderdiensten, woning schilderen, pand schilderen, duurzaam schilderwerk"/>
-        <meta property="og:url" content="https://www.stukadoorsbedrijf-ince.nl/schilderwerk-binnen-en-buiten"/>
+        <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/schilderwerk-binnen-en-buiten"/>
         <meta property="og:title" content="Stukadoorsbedrijf Ince - Schilderwerk Binnen en Buiten"/>
       </Head>
 
