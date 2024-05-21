@@ -15,7 +15,7 @@
 
 
 .homeoverons > div section:nth-of-type(1) h2{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 400;
     margin-bottom: 5px;
 }
@@ -30,12 +30,12 @@
     color: var(--accent1);
     border: 1.5px solid var(--accent1);
     width: 200px;
-    padding: 15px 0;
+    padding: 13px 0;
     border-radius: 25px;
     display: block;
     text-align: center;
     margin: 30px 0 0 0;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .homeoverons > div section:nth-of-type(1) a:hover{

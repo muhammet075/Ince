@@ -63,16 +63,10 @@ button{
   display: none !important;
 }
 
-
-.bordernone{
-  border: none !important;
+.swiper-button-next, .swiper-button-prev{
+  color: var(--accent1) !important;
 }
 
-@media only screen and (max-width: 900px) {
-  .bordertop{
-    margin-top: -5px !important;
-  }
-}
 
 @media only screen and (max-width: 880px) {
   .displaynonemobile {

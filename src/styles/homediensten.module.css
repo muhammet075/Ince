@@ -2,45 +2,95 @@
     margin: 200px auto 0 auto;
 }
 
-.homediensten > div{
+.homediensten > div:nth-of-type(1){
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.homediensten > div:nth-of-type(1) > h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.homediensten > div:nth-of-type(1) > div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.homediensten > div:nth-of-type(1) > div > a{
+    display: block;
+    width: 33%;
+    height: auto;
+    position: relative;
+}
+
+.homediensten > div:nth-of-type(1) > div > a > img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.homediensten > div:nth-of-type(1) > div > a > p{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--accent1);
+    color: #ffff;
+    padding: 7px 0;
+    width: 200px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.homediensten > div:nth-of-type(2){
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
     padding-bottom: 65px;
 }
 
-.homediensten > div > h2{
-    font-size: 45px;
+.homediensten > div:nth-of-type(2) > h2{
+    font-size: 35px;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.homediensten > div > p{
-    font-size: 14px;
-    max-width: 800px;
-    margin-bottom: 25px;
-}
-
-.homediensten > div > div:nth-of-type(1){
+.homediensten > div:nth-of-type(2) > div:nth-of-type(1){
     overflow: hidden;
 }
 
-.homediensten > div > div:nth-of-type(1) > div > section{
+.homediensten > div:nth-of-type(2) > div:nth-of-type(1) > div > section{
     position: relative;
-    height: 400px;
+    height: 230px;
     padding: 15px;
     border-radius: 10px;
     border: 1px solid var(--accent1);
     background: var(--accent2);
 }
 
-.homediensten > div > div:nth-of-type(1) > div > section h3{
+.homediensten > div:nth-of-type(2) > div:nth-of-type(1) > div > section h3{
     font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 25px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    height: fit-content;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-.homediensten > div > div:nth-of-type(1) > div > section p{
+.homediensten > div:nth-of-type(2) > div:nth-of-type(1) > div > section p{
     font-size: 14px;
     font-weight: 300;
     position: absolute;
@@ -48,55 +98,91 @@
     width: 90%;
 }
 
-.homediensten > div > div:nth-of-type(1) > div > section img{
+.homediensten > div:nth-of-type(2) > div:nth-of-type(1) > div > section img{
     height: 50px;
     width: auto;
-    margin-bottom: 15px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
-.homediensten > div > div:nth-of-type(1) > div > section a{
+.homediensten > div:nth-of-type(2) > div:nth-of-type(1) > div > section a{
     background-color: #ffff;
     color: var(--accent1);
     border: 1.5px solid var(--accent1);
     border-radius: 25px;
     font-weight: 500;
     width: 150px;
-    height: 45px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     position: absolute;
     bottom: 15px;
-    left: 15px;
+    left: 0;
+    right: 0;
     font-size: 14px;
 }
 
-.homediensten > div > div:nth-of-type(1) > div > section a:hover{
+.homediensten > div:nth-of-type(2) > div:nth-of-type(1) > div > section a:hover{
     background-color: var(--accent1);
     color: #ffff;
     transition: 0.2s ease;
 }
 
 
-.homediensten > div > div:nth-of-type(2){
+.homediensten > div:nth-of-type(2) > div:nth-of-type(2){
     top: auto;
     bottom: 0;
 }
 
-.homediensten > div > div:nth-of-type(3){
+.homediensten > div:nth-of-type(2) > div:nth-of-type(3){
     top: auto;
     bottom: 0;
 }
 
 @media only screen and (max-width: 1215px) {
-    .homediensten > div{
+    .homediensten > div:nth-of-type(1){
+        padding: 0 15px;
+    }
+
+    .homediensten > div:nth-of-type(2){
         padding: 0 15px 65px 15px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .homediensten > div:nth-of-type(1) > div > a > p{
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 15px;
+        width: 150px;
     }
 }
 
 @media only screen and (max-width: 650px) {
     .homediensten{
         margin: 150px auto 50px auto;
+    }
+
+    .homediensten > div:nth-of-type(1) > div{
+        flex-direction: column;
+    }
+
+    .homediensten > div:nth-of-type(1) > div > a{
+        width: 100%;
+    }
+
+    .homediensten > div:nth-of-type(1) > div > a > img{
+        border-radius: 15px;
+    }
+
+    .homediensten > div:nth-of-type(1) > div > a > p{
+        font-size: 20px;
+        width: 200px;
     }
 }
