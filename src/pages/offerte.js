@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/offerte.module.css";
+import emailjs from "@emailjs/browser";
 
 import Renovatie from "@/assets/offerteicons/renovatie.svg";
 import Nieuwbouw from "@/assets/offerteicons/nieuwbouw.svg";
@@ -373,6 +374,9 @@ export default function Offerte() {
 
       console.log(emailData)
 
+      emailjs.send("service_3i8d3ol","template_fxssnoj", emailData, "OfFVEZ4I9_pJLtPV-");
+
+
       document.querySelector("#offerstestap5").classList.add("displaynone");
       document.querySelector("#loadingstate").classList.remove("displaynone");
       document.querySelector('#offerteform').scrollIntoView({ behavior: 'smooth' });
@@ -463,11 +467,11 @@ export default function Offerte() {
 
             <ul>
               <li>
-                <input type="radio" id="nieuwbouwwoningradio" class="woningsoort" name="woningsoort" value="Nieuwbouwwoning" onClick={stap1Uitvoeren}/>
+                <input type="radio" id="nieuwbouwwoningradio" class="woningsoort" name="woningsoort" value="Nieuwbouw Woning" onClick={stap1Uitvoeren}/>
                 <label for="nieuwbouwwoningradio" id="nieuwbouwwoning"><Image src={Nieuwbouw} alt="Nieubouw icoon"/>Nieuwbouw</label>
               </li>
               <li>
-                <input type="radio" id="renovatiewoningradio" class="woningsoort" name="woningsoort" value="Renovatiewoning" onClick={stap1Uitvoeren}/>
+                <input type="radio" id="renovatiewoningradio" class="woningsoort" name="woningsoort" value="Renovatie Woning" onClick={stap1Uitvoeren}/>
                 <label for="renovatiewoningradio" id="renovatiewoning"><Image src={Renovatie} alt="Renovatie icoon"/>Renovatie</label>
               </li>
            </ul>
