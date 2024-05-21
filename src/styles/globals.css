@@ -220,7 +220,7 @@ button{
   background-image: url("/stukken3.jpg");
 }
 
-.schilderklaarstucen, .offerte{
+.schilderklaarstucen, .offertepage{
   background-image: url("/stukken4.jpg");
 }
 
@@ -435,4 +435,35 @@ button{
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+.activestap{
+  color: var(--accent1) !important;
+  font-weight: 500 !important;
+}
+
+.activestap p:first-child{
+  background-color: var(--accent1) !important;
+  color: #ffff !important;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.offerteerror{
+  color: #f60000;
+  font-weight: 400;
+  width: fit-content;
+  position: absolute;
+  right: 30px;
+  bottom: 85px;
+}
+
+.gekozenstap{
+  background-color: var(--accent2) !important;
+  border: 1.5px solid var(--accent1) !important;
 }

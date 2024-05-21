@@ -1,0 +1,203 @@
+.offerte{
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+}
+
+
+.offerte > div:nth-of-type(1){
+    background-color: rgb(210, 210, 210);
+    width: 75%;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(1) ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    list-style: none;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(1) ul li{
+    display: flex;
+    gap: 5px;
+    font-size: 13px;
+    margin-right: 60px;
+    position: relative;
+    color: #afafaf;
+    font-weight: 500;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(1) ul li::before{
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #afafaf;
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(1) ul li:last-child{
+    margin-right: 0;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(1) ul li:last-child::before{
+    display: none;
+}
+
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2){
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    padding: 25px 25px 100px 25px;
+    position: relative;
+}
+
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section h2{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section p{
+    margin-bottom: 25px;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section ul{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section ul li{
+    background-color: #ffff;
+    border: 1.5px solid #ffff;
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section ul li label{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 50px;
+    font-weight: 400;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section ul li input{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section button:nth-of-type(1){
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 200px;
+    height: 50px;
+    background: #747474;
+    color: #ffff;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section button:last-child{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 200px;
+    height: 50px;
+    background: var(--accent1);
+    color: #ffff;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section button:hover{
+    background-color: var(--hover1);
+    transition: 0.2s ease;
+}
+
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section:last-child ul li{
+    height: 65px;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section:last-child ul li input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: none;
+    border: none;
+    border-radius: 15px;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+} 
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section:last-child ul:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section:last-child ul:nth-of-type(2) li{
+    width: 100%;
+    width: 100%;
+    background: none !important;
+    border: none !important;
+    margin-bottom: 50px;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section:last-child ul:nth-of-type(2) li p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section:last-child ul:nth-of-type(2) li select{
+    height: 65px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section:last-child ul:nth-of-type(2) li:last-child span{
+    display: flex;
+    height: 65px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #ffff;
+} 
+
+.offerte > div:nth-of-type(1) > div:nth-of-type(2) section:last-child ul:nth-of-type(2) li:last-child span input[type="file"]{
+    position: static;
+    height: fit-content;
+}
