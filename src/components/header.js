@@ -76,12 +76,15 @@ function Header() {
   }
 
   useEffect(() => {
+    setInterval(checkTaal, 500);
 
-    if (document.querySelector("html").classList.contains("translated-ltr")){
-      document.querySelector("#selectedlanguage").src = "/en.png";
-    } else {
-      document.querySelector("#selectedlanguage").src = "/nl.png";
-    }
+    function checkTaal() {
+        if (document.querySelector("html").classList.contains("translated-ltr")){
+          document.querySelector("#selectedlanguage").src = "/en.png";
+        } else {
+          document.querySelector("#selectedlanguage").src = "/nl.png";
+        }
+      }
 
     function adjustHeaderMenuDisplay() {
       const hamburgerContainer = document.querySelector("#menulist");
