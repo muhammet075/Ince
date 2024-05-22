@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Homediensten from "@/components/homediensten";
-import buitenmuur from "@/assets/img/buitenmuur.jpg";
-import stuk2 from "@/assets/img/stukken2.jpg";
+import overons1 from "@/assets/img/overons1.png";
+import stuk3 from "@/assets/img/stukken3.jpg";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
@@ -46,7 +46,7 @@ export default function StukadoorKrommenie() {
               <p>In Krommenie hebben wij een sterke reputatie opgebouwd dankzij onze toewijding aan vakmanschap en klanttevredenheid. Wij luisteren naar uw wensen en leveren maatwerkoplossingen die perfect aansluiten bij uw behoeften. Of het nu gaat om een nieuwbouwproject, een renovatie of het herstellen van beschadigd stucwerk, wij staan voor u klaar met deskundig advies en hoogwaardige uitvoering.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={overons1} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function StukadoorKrommenie() {
               <p>Wij hechten veel waarde aan duidelijke communicatie en een transparante werkwijze. Vanaf het eerste contact tot de uiteindelijke oplevering houden wij u op de hoogte van de voortgang en betrekken wij u bij alle belangrijke beslissingen. Onze klanten in Krommenie waarderen onze professionele aanpak en aandacht voor detail. Bij Stukadoorsbedrijf Ince bent u verzekerd van vakmanschap, betrouwbaarheid en een resultaat waar u trots op kunt zijn.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={stuk3} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
   

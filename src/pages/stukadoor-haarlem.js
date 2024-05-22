@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Homediensten from "@/components/homediensten";
 import buitenmuur from "@/assets/img/buitenmuur.jpg";
-import stuk2 from "@/assets/img/stukken2.jpg";
+import inceauto1 from "@/assets/img/inceauto1.png";
+import stuk5 from "@/assets/img/stukken5.png";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
@@ -46,7 +47,7 @@ export default function StukadoorHaarlem() {
               <p>Ons bedrijf in Haarlem heeft een solide reputatie opgebouwd dankzij onze toewijding aan kwaliteit en klanttevredenheid. Wij geloven dat goed overleg en duidelijke communicatie de basis vormen voor elk succesvol project. Daarom nemen wij de tijd om uw wensen en eisen te begrijpen, zodat we een stucwerkoplossing kunnen bieden die perfect bij uw behoeften past. Met Stukadoorsbedrijf Ince kiest u voor een partner die kwaliteit, betrouwbaarheid en een prachtig eindresultaat garandeert.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={inceauto1} alt="Busjes van Stukadoorsbedrijf Ince"/>
             </section>
           </div>
         </div>
@@ -63,7 +64,7 @@ export default function StukadoorHaarlem() {
               <p>Onze werkwijze is gebaseerd op transparantie en samenwerking. Vanaf het eerste gesprek tot de laatste inspectie houden wij u op de hoogte van de voortgang en betrekken wij u bij alle belangrijke beslissingen. Dit zorgt niet alleen voor gemoedsrust, maar ook voor een eindresultaat dat volledig aan uw verwachtingen voldoet. Bij Stukadoorsbedrijf Ince in Haarlem zetten we altijd dat stapje extra om ervoor te zorgen dat u tevreden bent met ons werk.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={stuk5} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
   
@@ -86,6 +87,9 @@ export default function StukadoorHaarlem() {
             <section>
               <h3>Innovatief Stucwerk</h3>
               <p>Bij Stukadoorsbedrijf Ince blijven we voortdurend innoveren om onze klanten de beste oplossingen te bieden. We maken gebruik van de nieuwste technieken en materialen om ervoor te zorgen dat ons stucwerk niet alleen esthetisch aantrekkelijk is, maar ook duurzaam en functioneel. Van vochtwerende coatings tot decoratieve afwerkingen, wij zorgen ervoor dat uw project met de grootste zorg en precisie wordt uitgevoerd.</p>            
+            </section>
+            <section>
+              <Image src={buitenmuur} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
 

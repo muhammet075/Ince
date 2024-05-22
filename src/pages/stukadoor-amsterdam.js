@@ -3,8 +3,10 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Homediensten from "@/components/homediensten";
-import buitenmuur from "@/assets/img/buitenmuur.jpg";
 import stuk2 from "@/assets/img/stukken2.jpg";
+import stuk5 from "@/assets/img/stukken5.png";
+import busjes2 from "@/assets/img/inceauto2.png";
+import busjes1 from "@/assets/img/inceauto1.png";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
@@ -46,7 +48,7 @@ export default function StukadoorAmsterdam() {
               <p>In Amsterdam hebben wij een sterke reputatie opgebouwd dankzij onze professionele aanpak en uitstekende service. Wij begrijpen dat stucwerk een belangrijke rol speelt in het creëren van een mooie en duurzame ruimte, en streven ernaar om aan al uw verwachtingen te voldoen. Bij Stukadoorsbedrijf Ince bent u verzekerd van vakmanschap, betrouwbaarheid en uitstekende resultaten.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={stuk5} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
         </div>
@@ -73,6 +75,9 @@ export default function StukadoorAmsterdam() {
               <h2>Onze Diensten in Amsterdam</h2>
               <p>Stukadoorsbedrijf Ince biedt een uitgebreid scala aan stucwerk diensten voor zowel particuliere als zakelijke klanten in Amsterdam. Onze ervaren stukadoors voeren alle soorten stucwerk uit, van traditioneel pleisterwerk tot moderne sierpleisters. Wij leveren hoogwaardige resultaten die aan uw verwachtingen voldoen.</p>
             </section>
+            <section>
+              <Image src={busjes2} alt="Busjes van Stukadoorsbedrijf Ince"/>
+            </section>
           </div>
 
         </div>
@@ -87,6 +92,9 @@ export default function StukadoorAmsterdam() {
             <section>
               <h3>Modern Pleisterwerk</h3>
               <p>Ons modern pleisterwerk biedt een strakke en eigentijdse afwerking voor uw muren en plafonds. Perfect voor moderne interieurs, modern pleisterwerk creëert een naadloze en minimalistische uitstraling. Onze vakmensen hebben de expertise om uw ruimte te transformeren met deze stijlvolle afwerking.</p>            
+            </section>
+            <section>
+              <Image src={busjes1} alt="Busjes van Stukadoorsbedrijf Ince"/>
             </section>
           </div>
 

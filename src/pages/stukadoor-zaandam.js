@@ -5,6 +5,8 @@ import Image from "next/image";
 import Homediensten from "@/components/homediensten";
 import buitenmuur from "@/assets/img/buitenmuur.jpg";
 import stuk2 from "@/assets/img/stukken2.jpg";
+import stuk5 from "@/assets/img/stukken5.png";
+import busjes from "@/assets/img/inceauto1.png";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
@@ -46,7 +48,7 @@ export default function StukadoorZaandam() {
               <p>Onze klanten in Zaandam waarderen onze professionele aanpak en aandacht voor detail. Wij werken nauw samen met u, vanaf de eerste consultatie tot de uiteindelijke oplevering, om ervoor te zorgen dat elk project voldoet aan uw verwachtingen. Wij gebruiken alleen de beste materialen en technieken, waardoor we duurzame en esthetisch aantrekkelijke resultaten kunnen garanderen. Uw tevredenheid is onze hoogste prioriteit, en we doen er alles aan om deze te waarborgen.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={busjes} alt="Busjes van Stukadoorsbedrijf Ince"/>
             </section>
           </div>
         </div>
@@ -64,7 +66,7 @@ export default function StukadoorZaandam() {
               <p>Onze diensten zijn niet alleen van hoge kwaliteit, maar ook betaalbaar. We begrijpen dat elk project uniek is, en daarom bieden we op maat gemaakte oplossingen die aansluiten bij uw budget en behoeften. Van het eerste gesprek tot de laatste afwerking, wij zorgen ervoor dat het hele proces soepel en stressvrij verloopt. Kiezen voor Stukadoorsbedrijf Ince betekent kiezen voor betrouwbaarheid, expertise en een resultaat waar u trots op kunt zijn.</p>
             </section>
             <section>
-              <Image src={buitenmuur} alt="Een muur die gestuct wordt"/>
+              <Image src={stuk5} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
 
@@ -81,6 +83,9 @@ export default function StukadoorZaandam() {
               <h2>Onze Diensten in Zaandam</h2>
               <p>Stukadoorsbedrijf Ince biedt een breed scala aan stucwerk diensten voor zowel particuliere als zakelijke klanten in Zaandam. Of het nu gaat om het stucen van muren en plafonds, het aanbrengen van sierpleister, of het herstellen van beschadigd stucwerk, wij hebben de expertise om elke klus te klaren. Onze vakmensen gebruiken de nieuwste technieken en materialen om ervoor te zorgen dat elk project wordt uitgevoerd met de hoogste standaard van kwaliteit en duurzaamheid. Wij zijn er trots op dat wij kunnen bijdragen aan de schoonheid en waarde van uw woning of bedrijfspand.</p>
             </section>
+            <section>
+              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+            </section>
             </div>
 
             <div>
@@ -94,6 +99,9 @@ export default function StukadoorZaandam() {
             <section>
               <h3>Sierpleister en Spachtelputz</h3>
               <p>Voeg karakter en stijl toe aan uw woning met onze sierpleisters en Spachtelputz. Beschikbaar in diverse texturen en kleuren, deze decoratieve afwerkingen zijn perfect om uw muren een unieke uitstraling te geven. Sierpleister is niet alleen mooi, maar ook duurzaam en gemakkelijk te onderhouden, waardoor het een uitstekende keuze is voor zowel woon- als werkruimtes. Onze experts helpen u graag bij het kiezen van de juiste afwerking die past bij uw stijl en wensen.</p>            
+            </section>
+            <section>
+              <Image src={buitenmuur} alt="Een muur die gestuct wordt"/>
             </section>
             </div>
 

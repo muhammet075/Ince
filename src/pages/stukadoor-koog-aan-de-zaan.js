@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Homediensten from "@/components/homediensten";
-import buitenmuur from "@/assets/img/buitenmuur.jpg";
-import stuk2 from "@/assets/img/stukken2.jpg";
+import stuk1 from "@/assets/img/stukken1.jpg";
+import stuk3 from "@/assets/img/stukken3.jpg";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
@@ -46,7 +46,7 @@ export default function StukadoorKoogAanDeZaan() {
               <p>Onze klanten in Koog aan de Zaan waarderen onze nauwkeurigheid en toewijding. Wij werken met oog voor detail en streven naar perfectie in elk aspect van ons werk. Door nauw samen te werken met onze klanten, kunnen we stucwerk leveren dat volledig aan hun verwachtingen voldoet. Bij Stukadoorsbedrijf Ince kunt u rekenen op een vakkundige en betrouwbare service, van begin tot eind.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={stuk1} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function StukadoorKoogAanDeZaan() {
               <p>Onze transparante werkwijze zorgt ervoor dat u altijd weet waar u aan toe bent. Wij houden u tijdens het hele proces op de hoogte en betrekken u bij alle belangrijke beslissingen. Of het nu gaat om een groot renovatieproject of een kleine reparatie, wij behandelen elke klus met dezelfde zorg en precisie. Bij Stukadoorsbedrijf Ince in Koog aan de Zaan bent u verzekerd van kwaliteit en klanttevredenheid.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={stuk3} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
   

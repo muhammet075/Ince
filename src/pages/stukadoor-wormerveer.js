@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Homediensten from "@/components/homediensten";
-import buitenmuur from "@/assets/img/buitenmuur.jpg";
-import stuk2 from "@/assets/img/stukken2.jpg";
+import busjes from "@/assets/img/inceauto1.png";
+import stuk1 from "@/assets/img/stukken2.jpg";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
@@ -46,7 +46,7 @@ export default function StukadoorWormerveer() {
               <p>In Wormerveer staan wij bekend om onze betrouwbaarheid en klantgerichte aanpak. Wij luisteren naar uw wensen en zorgen ervoor dat elk project precies wordt uitgevoerd zoals u het voor ogen heeft. Van de eerste bespreking tot de oplevering, wij zijn er om u te helpen en te adviseren. Bij Stukadoorsbedrijf Ince krijgt u niet alleen vakmanschap, maar ook een uitstekende service.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={busjes} alt="Busjes van Stukadoorsbedrijf Ince"/>
             </section>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function StukadoorWormerveer() {
               <p>Wij hechten veel waarde aan transparantie en duidelijke communicatie. Vanaf het eerste contact tot de afronding van het project, houden wij u op de hoogte van de voortgang en betrekken wij u bij elke belangrijke beslissing. Onze klanten in Wormerveer waarderen onze professionele en klantgerichte aanpak. Bij Stukadoorsbedrijf Ince bent u verzekerd van vakmanschap, betrouwbaarheid en een resultaat dat aan al uw verwachtingen voldoet.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={stuk1} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
   

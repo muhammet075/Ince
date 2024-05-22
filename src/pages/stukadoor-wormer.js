@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Homediensten from "@/components/homediensten";
-import buitenmuur from "@/assets/img/buitenmuur.jpg";
-import stuk2 from "@/assets/img/stukken2.jpg";
+import cement from "@/assets/img/cement.jpg";
+import stuk1 from "@/assets/img/stukken1.jpg";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
@@ -46,7 +46,7 @@ export default function StukadoorWormer() {
               <p>In Wormer hebben wij een sterke reputatie opgebouwd dankzij onze toewijding aan kwaliteit en vakmanschap. Onze ervaren stukadoors werken nauwkeurig en efficiënt om elk project tot een succes te maken. Wij luisteren naar uw wensen en streven ernaar om aan al uw verwachtingen te voldoen. Bij Stukadoorsbedrijf Ince bent u verzekerd van vakmanschap en een uitstekende service.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={cement} alt="Een zak cement dat gevuld wordt in een emmer"/>
             </section>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function StukadoorWormer() {
               <p>Wij begrijpen dat elk project uniek is en bieden maatwerkoplossingen die aansluiten bij uw behoeften en budget. Vanaf het eerste contact tot de uiteindelijke oplevering staan wij voor u klaar om ervoor te zorgen dat het hele proces soepel en stressvrij verloopt. Onze klanten in Wormer waarderen onze professionele aanpak en persoonlijke benadering. Bij Stukadoorsbedrijf Ince bent u in goede handen.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+              <Image src={stuk1} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
   

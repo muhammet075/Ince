@@ -3,8 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Homediensten from "@/components/homediensten";
-import buitenmuur from "@/assets/img/buitenmuur.jpg";
-import stuk2 from "@/assets/img/stukken2.jpg";
+import stuk4 from "@/assets/img/stukken4.jpg";
+import stuk2 from "@/assets/img/overons1.png";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
@@ -63,7 +63,7 @@ export default function StukadoorAssendelft() {
               <p>Wij begrijpen dat elk project uniek is en bieden maatwerkoplossingen die aansluiten bij uw behoeften en budget. Vanaf het eerste contact tot de uiteindelijke oplevering staan wij voor u klaar om ervoor te zorgen dat het hele proces soepel en stressvrij verloopt. Onze klanten in Assendelft waarderen onze professionele aanpak en persoonlijke benadering. Bij Stukadoorsbedrijf Ince bent u in goede handen.</p>
             </section>
             <section>
-              <Image src={stuk2} alt="Een muur die gestuct wordt"/>
+            <Image src={stuk4} alt="Een muur die gestuct wordt"/>
             </section>
           </div>
   
