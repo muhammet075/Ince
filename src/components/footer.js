@@ -31,7 +31,7 @@ function Footer() {
         
         <ul>
           <li><Link href="/"><Image src={Logo} alt="Logo van Sukadoorsbedrijf Ince"/></Link></li>
-          <li><b>E-Mail:</b> info@incestukadoor.nl</li>
+          <li><b>E-Mail:</b> <Link href="mailto:info@stukadoorsbedrijfince.nl">info@stukadoorsbedrijfince.nl</Link></li>
           <li><b>Telefoon:</b> 06 48 03 33 74</li>
           <li><b>KVK:</b> 80027814</li>
           <li><b>BTW:</b> NL003387007B36</li>
@@ -54,8 +54,8 @@ function Footer() {
           <li><Link href="/portfolio">Portfolio</Link></li>
           <li><Link href="/contact">Contact</Link></li>
           <li><Link href="/offerte">Offerte</Link></li>
-          <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-          <li><Link href="/cookie-policy">Cookie Policy</Link></li>
+          <li><Link href="/privacybeleid">Privacybeleid</Link></li>
+          <li><Link href="/cookiebeleid">Cookiebeleid</Link></li>
           <li><Link href="/algemene-voorwaarden">Algemene Voorwaarden</Link></li>
           <li><Link target="_blank" href="/sitemap.xml">Sitemap</Link></li>
         </ul>

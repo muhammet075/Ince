@@ -11,6 +11,7 @@ import offerteIco from "@/assets/icons/offerte.svg";
 import nederland from "@/assets/icons/nederland.svg";
 import reviews from "@/assets/icons/reviews.svg";
 import kwaliteit from "@/assets/icons/kwaliteit.svg";
+import stukadoorPersoneel from "@/assets/img/stukadoorpersoneel.png";
 
 
 function Hero() {
@@ -52,6 +53,7 @@ function Hero() {
                     <li><Image src={check} alt="Check icoon"/> Prijsindicatie in de mail</li>
                     <li><Image src={check} alt="Check icoon"/> Meer dan 100 positieve reviews</li>
                 </ul>
+                <Image src={stukadoorPersoneel} alt="Werknemer van Stukadoorsbedrijf Ince"/>
             </section>
 
         </div>

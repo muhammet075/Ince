@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import inceAuto1 from "@/assets/img/inceauto1.png";
 import inceAuto2 from "@/assets/img/inceauto2.png";
+import overons1 from "@/assets/img/overons1.png";
 
 export default function Overons() {
   useEffect(() => {
@@ -52,7 +53,10 @@ export default function Overons() {
           <div>
             <section>
               <h3>Team</h3>
-              <p>Het succes van Stukadoorsbedrijf Ince is te danken aan ons toegewijde team van professionals. Elk lid van ons team brengt unieke vaardigheden en een passie voor perfectie mee, wat bijdraagt aan de hoge kwaliteit van ons werk. Wij geloven sterk in continue opleiding en training, zodat onze vakmensen altijd op de hoogte zijn van de nieuwste technieken en trends in de stukadoorsbranche. Door voortdurend te investeren in de ontwikkeling van ons team, kunnen we garanderen dat we de best mogelijke service en afwerking leveren. Ons team werkt nauw samen en communiceert effectief om ervoor te zorgen dat elk project tot in de kleinste details perfect wordt uitgevoerd. Deze samenwerking en toewijding aan kwaliteit en precisie vormen de kern van ons bedrijf. Door onze gezamenlijke inzet hebben we een solide reputatie opgebouwd als een betrouwbare en deskundige partner voor zowel nieuwbouw- als renovatieprojecten. We zijn trots op de vaardigheden en de toewijding van ons team, en we blijven streven naar uitmuntendheid in alles wat we doen.</p>
+              <p>Het succes van Stukadoorsbedrijf Ince is te danken aan ons toegewijde team van professionals. Elk lid van ons team brengt unieke vaardigheden en een passie voor perfectie mee, wat bijdraagt aan de hoge kwaliteit van ons werk. Wij geloven sterk in continue opleiding en training, zodat onze vakmensen altijd op de hoogte zijn van de nieuwste technieken en trends in de stukadoorsbranche. Door voortdurend te investeren in de ontwikkeling van ons team, kunnen we garanderen dat we de best mogelijke service en afwerking leveren. Ons team werkt nauw samen en communiceert effectief om ervoor te zorgen dat elk project tot in de kleinste details perfect wordt uitgevoerd. Deze samenwerking en toewijding aan kwaliteit en precisie vormen de kern van ons bedrijf.</p>
+            </section>
+            <section>
+              <Image src={overons1} alt="Personeel van Stukadoorsbedrijf Ince"/>
             </section>
           </div>
 

@@ -208,15 +208,16 @@ button{
 
 
 
-.stucwerkbinnenenbuiten, .behangklaarstucen, .contact{
+.stucwerkbinnenenbuiten, .behangklaarstucen, .contact, .cookiebeleid{
   background-image: url("/stukken1.jpg");
 }
 
 .wandenenplafondsstucen, .overons{
-  background-image: url("/stukken2.jpg");
+  background-image: url("/stuk1.png");
+  background-position: 50% 0%;
 }
 
-.spachtelputzstucenfijnekorrel{
+.spachtelputzstucenfijnekorrel, .algemenevoorwaarden{
   background-image: url("/stukken5.jpg");
 }
 
@@ -224,7 +225,7 @@ button{
   background-image: url("/stukken3.jpg");
 }
 
-.schilderklaarstucen, .offertepage{
+.schilderklaarstucen, .offertepage, .privacybeleid{
   background-image: url("/stukken4.jpg");
 }
 
@@ -278,8 +279,11 @@ button{
 
 
 
-
-
+@media only screen and (max-width: 880px) {
+  .wandenenplafondsstucen, .overons{
+    background-position: 0%;
+  }
+}
 
 .pagehero > div{
   width: 100%;
@@ -395,12 +399,37 @@ button{
   margin-bottom: 5px;
 }
 
+.policy h2{
+  margin: 75px 0 10px 0 !important;
+  font-size: 23px !important;
+}
+
+.policy h2:nth-of-type(1){
+  margin-top: 0px !important;
+}
+
+.policy p strong{
+  margin: 0 !important;
+}
+
+
 .pagelayout > div > div section h3{
   font-size: 25px;
   font-weight: 500;
   color: #000;
   margin-bottom: 5px;
 }
+
+.policy h3{
+  margin: 50px 0 5px 0 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.policy ul, .policy ol{
+  padding: 0 0 0 15px;
+}
+
 
 .pagelayout > div > div section img{
   max-width: 500px;
@@ -436,6 +465,14 @@ button{
   .pagelayout > div > div{
     flex-direction: column;
     gap: 25px;
+  }
+
+  .pagelayout > div > div section h2, .pagelayout > div > div section h3{
+    font-size: 23px;
+  }
+
+  .pagelayout > div > div section p{
+    font-size: 14px;
   }
 
   .pagelayout > div > div section img{
