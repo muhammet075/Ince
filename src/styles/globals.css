@@ -643,3 +643,7 @@ button{
       transform: rotate(0)
   }
 }
+
+#gt-nvframe{
+  display: none !important;
+}

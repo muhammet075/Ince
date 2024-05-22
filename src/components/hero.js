@@ -6,8 +6,6 @@ import werkspot from "@/assets/logos/werkspot.svg";
 import google from "@/assets/logos/google.svg";
 import star from "@/assets/icons/goldstar.svg";
 import offerteIco from "@/assets/icons/offerte.svg";
-
-
 import nederland from "@/assets/icons/nederland.svg";
 import reviews from "@/assets/icons/reviews.svg";
 import kwaliteit from "@/assets/icons/kwaliteit.svg";
@@ -15,6 +13,29 @@ import stukadoorPersoneel from "@/assets/img/stukadoorpersoneel.png";
 
 
 function Hero() {
+
+
+    async function translateFetch(){
+            const res = await fetch("https://libretranslate.com/translate", {
+            method: "POST",
+            body: JSON.stringify({
+                q: "hoi welkom",
+                source: "nl",
+                target: "en",
+                format: "text",
+                api_key: ""
+            }),
+            headers: { "Content-Type": "application/json" }
+        });
+
+        console.log(await res.json());
+    }
+
+    translateFetch()
+
+
+
+
   return (
     <div className={styles.hero}>
       <div>
