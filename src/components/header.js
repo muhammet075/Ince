@@ -18,7 +18,7 @@ function Header() {
   function kiesTaal(event) {
     let gekozenTaal = event.target.classList;
     if (gekozenTaal.contains("nederlands")) {
-        window.location.href = "/localhost:3000";
+        window.location.href = "/";
     } else if (gekozenTaal.contains("engels")) {
         window.location.href = "https://ince-vercel-app.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
     }
