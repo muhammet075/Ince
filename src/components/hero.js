@@ -21,7 +21,7 @@ function Hero() {
 
             <section>
                 <h1>Uw specialist in stucwerk en afwerking</h1>
-                <p>Bent u de trotse eigenaar van een nieuwbouwwoning of appartement? Of overweegt u een renovatie? Dan is het belangrijk om de afwerking goed te overwegen. Nieuwe ruimtes zijn vaak kaal en leeg bij oplevering. Met stucwerk kunt u uw muren een stijlvolle en moderne uitstraling geven.</p>
+                <p>Bent u de trotse eigenaar van een nieuwbouwwoning? Of overweegt u een renovatie van uw huidige woning? Dan is het belangrijk om de afwerking goed te overwegen. Nieuwe ruimtes zijn vaak kaal en leeg bij oplevering. Met stucwerk kunt u uw muren een stijlvolle en moderne uitstraling geven.</p>
 
                 <div>
                 <Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince/reviews" target="_blank">
@@ -47,10 +47,10 @@ function Hero() {
                 </ul>
 
                 <ul>
-                    <li><Image src={check} alt="Check icoon"/> Prijsindicatie direct in de mail</li>
                     <li><Image src={check} alt="Check icoon"/> Advies op maat</li>
                     <li><Image src={check} alt="Check icoon"/> Snelle reactie</li>
-                    <li><Image src={check} alt="Check icoon"/> Meer dan 150 reviews</li>
+                    <li><Image src={check} alt="Check icoon"/> Prijsindicatie in de mail</li>
+                    <li><Image src={check} alt="Check icoon"/> Meer dan 100 positieve reviews</li>
                 </ul>
             </section>
 

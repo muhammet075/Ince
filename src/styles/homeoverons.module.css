@@ -1,6 +1,6 @@
 .homeoverons{
     background-color: var(--accent2);
-    margin: 150px auto;
+    margin: 150px auto 250px auto;
     padding: 75px 0;
 }
 
@@ -101,7 +101,7 @@
 @media only screen and (max-width: 650px) {
     .homeoverons{
         padding: 50px 15px;
-        margin: 50px auto;
+        margin: 50px auto 0 auto;
     }
     
     .homeoverons > div{
