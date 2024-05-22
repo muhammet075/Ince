@@ -3,6 +3,8 @@ import Head from "next/head";
 import Hero from "@/components/hero";
 import Homeoverons from "@/components/homeoverons";
 import Homediensten from "@/components/homediensten";
+import Reviews from "@/components/reviews";
+import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
 export default function Home() {
   useEffect(() => {
@@ -21,6 +23,8 @@ export default function Home() {
       <Hero/>
       <Homediensten/>
       <Homeoverons/>
+      <Reviews/>
+      <Meestgesteldevragen/>
     </>
   );
 }

@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import styles from "@/styles/contact.module.css";
 import checkIco from "@/assets/icons/greencheck.svg";
 import Reviews from "@/components/reviews";
+import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
 export default function Contact() {
 
@@ -192,9 +193,7 @@ export default function Contact() {
       </div>
       
       <Reviews/>
-
-
-
+      <Meestgesteldevragen/>
 
     </>
   );

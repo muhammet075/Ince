@@ -43,9 +43,9 @@ function Footer() {
           <li><Link href="/portfolio">Portfolio</Link></li>
           <li><Link href="/contact">Contact</Link></li>
           <li><Link href="/offerte">Offerte</Link></li>
-          <li><Link href="/algemene-voorwaarden">Algemene Voorwaarden</Link></li>
           <li><Link href="/privacy-policy">Privacy Policy</Link></li>
           <li><Link href="/cookie-policy">Cookie Policy</Link></li>
+          <li><Link href="/algemene-voorwaarden">Algemene Voorwaarden</Link></li>
           <li><Link target="_blank" href="/sitemap.xml">Sitemap</Link></li>
         </ul>
 

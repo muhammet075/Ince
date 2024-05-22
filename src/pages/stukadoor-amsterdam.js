@@ -6,6 +6,7 @@ import Homediensten from "@/components/homediensten";
 import buitenmuur from "@/assets/img/buitenmuur.jpg";
 import stuk2 from "@/assets/img/stukken2.jpg";
 import Reviews from "@/components/reviews";
+import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
 export default function StukadoorAmsterdam() {
   useEffect(() => {
@@ -97,6 +98,8 @@ export default function StukadoorAmsterdam() {
           </div>
         </div>
       </div>
+
+      <Meestgesteldevragen/>
     </>
   );
 }

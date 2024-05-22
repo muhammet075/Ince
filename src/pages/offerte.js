@@ -6,6 +6,7 @@ import styles from "@/styles/offerte.module.css";
 import emailjs from "@emailjs/browser";
 
 import Reviews from "@/components/reviews";
+import Meestgesteldevragen from "@/components/meestgesteldevragen";
 
 import Renovatie from "@/assets/offerteicons/renovatie.svg";
 import Nieuwbouw from "@/assets/offerteicons/nieuwbouw.svg";
@@ -706,10 +707,12 @@ export default function Offerte() {
 
 
         </div>
-        <div></div>
+        <div>
+        </div>
       </div>
 
       <Reviews/>
+      <Meestgesteldevragen/>
     </>
   );
 }
