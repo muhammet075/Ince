@@ -208,7 +208,7 @@ button{
 
 
 
-.stucwerkbinnenenbuiten, .behangklaarstucen, .contact, .cookiebeleid{
+.stucwerkbinnenenbuiten, .behangklaarstucen, .offertepage, .cookiebeleid{
   background-image: url("/stukken1.jpg");
 }
 
@@ -222,19 +222,17 @@ button{
 }
 
 .aquastucenzandcementvoorbadkamers, .portfolio{
-  background-image: url("/stukken3.jpg");
+  background-image: url("/plafond.jpg");
+  background-position: 50% 85%;
 }
 
-.schilderklaarstucen, .offertepage, .privacybeleid{
-  background-image: url("/stukken4.jpg");
+.schilderklaarstucen, .contact, .privacybeleid, .wandenenplafondsschilderen{
+  background-image: url("/schilderen1.jpg");
+  background-position: 50% 9%;
 }
 
 .schilderwerkbinnenenbuiten{
   background-image: url("/schilderen3.jpg");
-}
-
-.wandenenplafondsschilderen{
-  background-image: url("/schilderen1.jpg");
 }
 
 .deurenkozijnenenhoutwerkschilderen{
