@@ -64,9 +64,9 @@ function Homediensten() {
       <div>
         <h2>Onze Projecten</h2>
         <div>
-          <Link href="/portfolio" data-aos="fade-up"><Image src={project1} alt="Een muur dat geschilderd is"/><p>Schilderen</p></Link>
-          <Link href="/portfolio" data-aos="fade-up"><Image src={project2} alt="Een hek met een spanddoek van Stukadoorsbedrijf Ince"/><p>Buiten Stucen</p></Link>
-          <Link href="/portfolio" data-aos="fade-up"><Image src={project3} alt="Een kamer dat gestuct wordt"/><p>Binnen Stucen</p></Link>
+          <Link href="/portfolio" data-aos="fade-up"><Image src={project1} alt="Een muur dat geschilderd is"/><p>Bekijk meer</p></Link>
+          <Link href="/portfolio" data-aos="fade-up"><Image src={project2} alt="Een hek met een spanddoek van Stukadoorsbedrijf Ince"/><p>Bekijk meer</p></Link>
+          <Link href="/portfolio" data-aos="fade-up"><Image src={project3} alt="Een kamer dat gestuct wordt"/><p>Bekijk meer</p></Link>
         </div>
       </div>
 
