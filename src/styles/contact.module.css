@@ -1,22 +1,84 @@
 .contact > div:nth-of-type(1){
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 50px auto;
+}
+
+.contact > div:nth-of-type(1) ul{
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.contact > div:nth-of-type(1) ul li{
+    margin-bottom: 10px;
+}
+
+.contact > div:nth-of-type(1) ul li b{
+    font-weight: 600;
+}
+
+.contact > div:nth-of-type(1) ul h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contact > div:nth-of-type(1) ul:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact > div:nth-of-type(1) ul:nth-of-type(2) li{
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+.contact > div:nth-of-type(1) ul:nth-of-type(2) li a{
+    height: 100%;
+    width: 100%;
+    background-color: var(--accent1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > div:nth-of-type(1) ul:nth-of-type(2) li a:hover{
+    background-color: var(--hover1);
+    transition: 0.2s ease;
+}
+
+.contact > div:nth-of-type(1) ul:nth-of-type(2) li a img{
+    width: 25px;
+    height: auto;
+}
+     
+
+     
+
+
+
+
+
+.contact > div:nth-of-type(2){
+    max-width: 1200px;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
 }
 
-.contact > div:nth-of-type(1) section{
+.contact > div:nth-of-type(2) section{
     width: 48%;
     height: 650px;
 }
 
-.contact > div:nth-of-type(1) section iframe{
+.contact > div:nth-of-type(2) section iframe{
     width: 100%;
     height: 100%;
     border: none;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2){
+.contact > div:nth-of-type(2) section:nth-of-type(2){
     border-radius: 15px;
     background-color: #efefef;
     display: flex;
@@ -25,12 +87,12 @@
     position: relative;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div{
     width: 100%;
     height: 100%;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div:nth-of-type(1) > p{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div:nth-of-type(1) > p{
     position: absolute;
     left: 25px;
     bottom: 95px;
@@ -38,17 +100,17 @@
     color: #fc0000;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div > div h2{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div > div h2{
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div > div{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div > div{
     margin-bottom: 10px;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div > div input{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div > div input{
     width: 100%;
     height: 50px;
     padding: 0 15px;
@@ -60,11 +122,11 @@
     border: 1.5px solid #ffff;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div > div:nth-last-child(4) input{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div > div:nth-last-child(4) input{
     width: 150px;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div > div textarea{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div > div textarea{
     width: 100%;
     height: 100px;
     padding: 15px;
@@ -77,7 +139,7 @@
     border: 1.5px solid #ffff;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div > div button{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div > div button{
     display: block;
     width: 200px;
     height: 50px;
@@ -94,19 +156,19 @@
     left: 25px;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div > div button:hover{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div > div button:hover{
     background-color: var(--hover1);
     color: #ffff !important;
     transition: 0.2s ease;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div:nth-of-type(2){
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div:nth-of-type(2){
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div:nth-of-type(3){
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div:nth-of-type(3){
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -114,7 +176,7 @@
     gap: 25px;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div:nth-of-type(3) p:first-child{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div:nth-of-type(3) p:first-child{
     font-weight: 600;
     font-size: 18px;
     display: flex;
@@ -123,52 +185,52 @@
     gap: 5px;
 }
 
-.contact > div:nth-of-type(1) section:nth-of-type(2) > div:nth-of-type(3) p:first-child img{
+.contact > div:nth-of-type(2) section:nth-of-type(2) > div:nth-of-type(3) p:first-child img{
     width: 35px;
     height: auto;
 }
 
 @media only screen and (max-width: 1215px) {
-    .contact > div:nth-of-type(1){
+    .contact > div:nth-of-type(1), .contact > div:nth-of-type(2){
         padding: 0 15px;
     }
 }
 
 @media only screen and (max-width: 730px) {
-    .contact > div:nth-of-type(1){
-        flex-direction: column;
-        gap: 75px;
+    .contact > div:nth-of-type(2){
+        flex-direction: column-reverse;
+        gap: 50px;
     }
 
-    .contact > div:nth-of-type(1) section{
+    .contact > div:nth-of-type(2) section{
         width: 100%;
     }
 
-    .contact > div:nth-of-type(1) section:nth-of-type(2){
+    .contact > div:nth-of-type(2) section:nth-of-type(2){
         height: 700px;
     }
 
-    .contact > div:nth-of-type(1) section:nth-of-type(2) > div > div input{
+    .contact > div:nth-of-type(2) section:nth-of-type(2) > div > div input{
         margin-bottom: 10px;
     }
 
-    .contact > div:nth-of-type(1) section:nth-of-type(2) > div > div textarea{
+    .contact > div:nth-of-type(2) section:nth-of-type(2) > div > div textarea{
         margin-bottom: 10px;
     }
 
-    .contact > div:nth-of-type(1) section:nth-of-type(2) > div:nth-of-type(1) > p{
+    .contact > div:nth-of-type(2) section:nth-of-type(2) > div:nth-of-type(1) > p{
         font-size: 13px;
         max-width: 85%;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .contact > div:nth-of-type(1) section:nth-of-type(2) > div:nth-of-type(3) p:first-child{
+    .contact > div:nth-of-type(2) section:nth-of-type(2) > div:nth-of-type(3) p:first-child{
         flex-direction: column;
         font-size: 22px;
     }
 
-    .contact > div:nth-of-type(1) section:nth-of-type(2) > div:nth-of-type(3) p:first-child img{
+    .contact > div:nth-of-type(2) section:nth-of-type(2) > div:nth-of-type(3) p:first-child img{
         width: 45px;
     }
 }

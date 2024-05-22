@@ -5,8 +5,13 @@ import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import styles from "@/styles/contact.module.css";
 import checkIco from "@/assets/icons/greencheck.svg";
+import Instagram from "@/assets/icons/instagram.svg";
+import Facebook from "@/assets/icons/facebook.svg";
+import WhatsApp from "@/assets/icons/whatsapp.svg";
+import Werkspot from "@/assets/icons//werkspotico.svg";
 import Reviews from "@/components/reviews";
 import Meestgesteldevragen from "@/components/meestgesteldevragen";
+
 
 export default function Contact() {
 
@@ -132,6 +137,25 @@ export default function Contact() {
 
 
       <div className={styles.contact}>
+
+        <div>
+          <ul>
+            <li><h2>Stukadoorsbedrijf Ince</h2></li>
+            <li><b>E-Mail:</b> info@incestukadoor.nl</li>
+            <li><b>Telefoon:</b> 06 48 03 33 74</li>
+            <li><b>KVK:</b> 80027814</li>
+            <li><b>BTW:</b> NL003387007B36</li>
+            <li><b>IBAN:</b> NL33ABNA0882110691</li>
+            <li><b>Adres:</b> Kralingen 124<br/> 1566CC Assendelft</li>
+          </ul>
+
+          <ul>
+            <li><Link href="https://www.instagram.com/stukadoors_ince/" target="_blank"><Image src={Instagram} alt="Instagram Logo"/></Link></li>
+            <li><Link href="https://www.facebook.com/stukadoorsbedrijf.ince/" target="_blank"><Image src={Facebook} alt="Instagram Logo"/></Link></li>
+            <li><Link href="https://api.whatsapp.com/send/?phone=31648033374" target="_blank"><Image src={WhatsApp} alt="Instagram Logo"/></Link></li>
+            <li><Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince" target="_blank"><Image src={Werkspot} alt="Werkspot Logo"/></Link></li>
+          </ul>
+        </div>
 
         <div>
           <section>
