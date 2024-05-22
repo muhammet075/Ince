@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }) {
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-
       </Head>
       <Header/>
       <main>
