@@ -151,8 +151,8 @@ export default function Contact() {
 
           <ul>
             <li><Link href="https://www.instagram.com/stukadoors_ince/" target="_blank"><Image src={Instagram} alt="Instagram Logo"/></Link></li>
-            <li><Link href="https://www.facebook.com/stukadoorsbedrijf.ince/" target="_blank"><Image src={Facebook} alt="Instagram Logo"/></Link></li>
-            <li><Link href="https://api.whatsapp.com/send/?phone=31648033374" target="_blank"><Image src={WhatsApp} alt="Instagram Logo"/></Link></li>
+            <li><Link href="https://www.facebook.com/stukadoorsbedrijf.ince/" target="_blank"><Image src={Facebook} alt="Facebook Logo"/></Link></li>
+            <li><Link href="https://api.whatsapp.com/send/?phone=31648033374" target="_blank"><Image src={WhatsApp} alt="WhatsApp Logo"/></Link></li>
             <li><Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince" target="_blank"><Image src={Werkspot} alt="Werkspot Logo"/></Link></li>
           </ul>
         </div>
