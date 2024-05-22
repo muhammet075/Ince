@@ -198,8 +198,6 @@
     height: auto;
 }
      
-
-
 .footer > div:nth-of-type(3){
     background-color: #ffff;
     color: #000;
@@ -216,12 +214,12 @@
 
 .footer > div:nth-of-type(3) > div p{
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .footer > div:nth-of-type(3) > div span{
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
     display: flex;
     align-items: center;
 }
