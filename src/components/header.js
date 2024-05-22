@@ -14,23 +14,16 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function Header() {
-  function kiesTaal(){
-    let gekozenTaal = event.target.className;
-    sessionStorage.setItem("gekozentaal", gekozenTaal)
 
-    checkTaal();
-  }
-
-  function checkTaal(){
-    let gekozenTaal = sessionStorage.getItem("gekozentaal");
-
-    if (gekozenTaal === "nederlands"){
-      document.querySelector("#selectedlanguage").src = "/nl.png";
-    } else if (gekozenTaal === "engels"){
-      document.querySelector("#selectedlanguage").src = "/en.png";
-      window.location = "https://ince-vercel-app.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
+  function kiesTaal(event) {
+    let gekozenTaal = event.target.classList;
+    if (gekozenTaal.contains("nederlands")) {
+        window.location = "/localhost:3000";
+    } else if (gekozenTaal.contains("engels")) {
+        window.location = "https://ince-vercel-app.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
     }
-  }
+}
+
 
   const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
   const [isSubmenuClicked, setIsSubmenuClicked] = useState(false);
@@ -83,12 +76,11 @@ function Header() {
   }
 
   useEffect(() => {
-    let gekozenTaal = sessionStorage.getItem("gekozentaal");
 
-    if (gekozenTaal === "nederlands"){
-      document.querySelector("#selectedlanguage").src = "/nl.png";
-    } else if (gekozenTaal === "engels"){
+    if (document.querySelector("html").classList.contains("translated-ltr")){
       document.querySelector("#selectedlanguage").src = "/en.png";
+    } else {
+      document.querySelector("#selectedlanguage").src = "/nl.png";
     }
 
     function adjustHeaderMenuDisplay() {
