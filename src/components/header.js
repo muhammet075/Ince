@@ -14,6 +14,24 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function Header() {
+  function kiesTaal(){
+    let gekozenTaal = event.target.className;
+    sessionStorage.setItem("gekozentaal", gekozenTaal)
+
+    checkTaal();
+  }
+
+  function checkTaal(){
+    let gekozenTaal = sessionStorage.getItem("gekozentaal");
+
+    if (gekozenTaal === "nederlands"){
+      document.querySelector("#selectedlanguage").src = "/nl.png";
+    } else if (gekozenTaal === "engels"){
+      document.querySelector("#selectedlanguage").src = "/en.png";
+      window.location = "https://ince-vercel-app.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
+    }
+  }
+
   const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
   const [isSubmenuClicked, setIsSubmenuClicked] = useState(false);
   const submenuRef = useRef(null);
@@ -65,6 +83,14 @@ function Header() {
   }
 
   useEffect(() => {
+    let gekozenTaal = sessionStorage.getItem("gekozentaal");
+
+    if (gekozenTaal === "nederlands"){
+      document.querySelector("#selectedlanguage").src = "/nl.png";
+    } else if (gekozenTaal === "engels"){
+      document.querySelector("#selectedlanguage").src = "/en.png";
+    }
+
     function adjustHeaderMenuDisplay() {
       const hamburgerContainer = document.querySelector("#menulist");
 
@@ -127,10 +153,10 @@ function Header() {
       <div>
         <div>
           <div>
-            <button onClick={openLanguageList}><Image id="selectedlanguage" src={nlFlag} alt="Vlag van Nederland" /></button>
+            <button onClick={openLanguageList}><img id="selectedlanguage" src="/nl.png" alt="Vlag van Nederland" /></button>
             <ul className="languagelist displaynone">
-              <li><button className="nlflag"><Image src={nlFlag} alt="Vlag van Nederland" /></button></li>
-              <li><button className="enflag"><Image src={enFlag} alt="Vlag van Verenigd Koninkrijk" /></button></li>
+              <li><button className="nederlands" onClick={kiesTaal}><Image src={nlFlag} alt="Vlag van Nederland" /></button></li>
+              <li><button className="engels" onClick={kiesTaal}><Image src={enFlag} alt="Vlag van Verenigd Koninkrijk"/></button></li>
             </ul>
           </div>
 

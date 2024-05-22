@@ -13,29 +13,6 @@ import stukadoorPersoneel from "@/assets/img/stukadoorpersoneel.png";
 
 
 function Hero() {
-
-
-    async function translateFetch(){
-            const res = await fetch("https://libretranslate.com/translate", {
-            method: "POST",
-            body: JSON.stringify({
-                q: "hoi welkom",
-                source: "nl",
-                target: "en",
-                format: "text",
-                api_key: ""
-            }),
-            headers: { "Content-Type": "application/json" }
-        });
-
-        console.log(await res.json());
-    }
-
-    translateFetch()
-
-
-
-
   return (
     <div className={styles.hero}>
       <div>
