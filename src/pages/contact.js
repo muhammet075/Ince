@@ -114,11 +114,11 @@ export default function Contact() {
     <>
       <Head>
           <title>Stukadoorsbedrijf Ince - Contact</title>
-          <meta name="description" content=""/>
-          <meta name="og:description" content=""/>
-          <meta name="keywords" content=""/>
-          <meta property="og:url" content=""/>
-          <meta property="og:title" content=""/>
+          <meta name="description" content="Neem contact op met Stukadoorsbedrijf Ince voor al uw stucwerk behoeften. Wij bieden hoogwaardige stucdiensten voor zowel particuliere als zakelijke klanten."/>
+          <meta name="og:description" content="Neem contact op met Stukadoorsbedrijf Ince voor al uw stucwerk behoeften. Wij bieden hoogwaardige stucdiensten voor zowel particuliere als zakelijke klanten."/>
+          <meta name="keywords" content="stukadoor, stucwerk, stukadoorsbedrijf, Stukadoorsbedrijf Ince, stucdiensten, wandafwerking"/>
+          <meta property="og:url" content="https://www.stukadoorsbedrijfince.nl/contact"/>
+          <meta property="og:title" content="Stukadoorsbedrijf Ince - Contact"/>
       </Head>
 
       <div className="pagehero contact">
