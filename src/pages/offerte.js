@@ -492,7 +492,7 @@ export default function Offerte() {
         
           <section id="offerstestap1">
             <h2>1. Kies uw type woning</h2>  
-            <p>Heeft u een nieuwbouw woning of wilt u uw woning renoveren?</p>
+            <p>Kies voor nieuwbouw als uw woning 2 jaar oud of jonger is.</p>
 
             <ul>
               <li>
