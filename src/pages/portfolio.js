@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-
+import Reviews from "@/components/reviews";
 
 export default function Portfolio() {
   useEffect(() => {
@@ -52,6 +52,7 @@ export default function Portfolio() {
 
         </div>
       </div>
+      <Reviews/>
     </>
   );
 }

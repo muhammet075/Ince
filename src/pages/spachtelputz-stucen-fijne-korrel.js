@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import fijnekorrel from "@/assets/img/fijnekorrel.png";
-
+import Reviews from "@/components/reviews";
 
 export default function SpachtelputzStucenFijneKorrel() {
   useEffect(() => {
@@ -65,6 +65,8 @@ export default function SpachtelputzStucenFijneKorrel() {
 
         </div>
       </div>
+
+      <Reviews/>
     </>
   );
 }

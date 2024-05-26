@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import deur from "@/assets/img/deur.jpg";
 import kozijn from "@/assets/img/kozijn.jpg";
-
+import Reviews from "@/components/reviews";
 
 export default function DeurenKozijnenEnHoutwerkSchilderen() {
   useEffect(() => {
@@ -78,6 +78,8 @@ export default function DeurenKozijnenEnHoutwerkSchilderen() {
 
         </div>
       </div>
+
+      <Reviews/>
     </>
   );
 }

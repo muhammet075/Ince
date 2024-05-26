@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import schilderen1 from "@/assets/img/wandschilderen.jpg";
 import schilderen2 from "@/assets/img/plafondschilderen.jpg";
-
+import Reviews from "@/components/reviews";
 
 export default function WandenEnPlafondsSchilderen() {
   useEffect(() => {
@@ -76,6 +76,8 @@ export default function WandenEnPlafondsSchilderen() {
 
         </div>
       </div>
+
+      <Reviews/>
     </>
   );
 }

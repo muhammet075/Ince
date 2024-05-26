@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import stuk4 from "@/assets/img/stukken4.jpg";
-
+import Reviews from "@/components/reviews";
 
 export default function BehangklaarStucen() {
   useEffect(() => {
@@ -64,6 +64,8 @@ export default function BehangklaarStucen() {
 
         </div>
       </div>
+
+      <Reviews/>
     </>
   );
 }

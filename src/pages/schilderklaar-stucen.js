@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import stuk3 from "@/assets/img/stukken3.jpg";
+import Reviews from "@/components/reviews";
 
 export default function SchilderklaarStucen() {
   useEffect(() => {
@@ -63,6 +64,7 @@ export default function SchilderklaarStucen() {
 
         </div>
       </div>
+      <Reviews/>
     </>
   );
 }

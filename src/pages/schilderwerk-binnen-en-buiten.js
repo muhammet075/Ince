@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import schilderen1 from "@/assets/img/binnenschilderen.jpg";
 import schilderen2 from "@/assets/img/buitenschilderen.jpg";
-
+import Reviews from "@/components/reviews";
 
 export default function SchilderwerkBinnenEnBuiten() {
   useEffect(() => {
@@ -76,6 +76,8 @@ export default function SchilderwerkBinnenEnBuiten() {
 
         </div>
       </div>
+
+      <Reviews/>
     </>
   );
 }

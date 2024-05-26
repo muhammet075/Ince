@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import buitenmuur from "@/assets/img/buitenmuur.jpg";
 import stuk2 from "@/assets/img/stukken2.jpg";
-
+import Reviews from "@/components/reviews";
 
 export default function StucwerkBinnenenBuiten() {
   useEffect(() => {
@@ -77,6 +77,8 @@ export default function StucwerkBinnenenBuiten() {
 
         </div>
       </div>
+
+      <Reviews/>
     </>
   );
 }

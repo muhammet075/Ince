@@ -1,11 +1,15 @@
 .reviews{
+    overflow: hidden;
+}
+
+.reviews > div:nth-of-type(1){
     background-color: var(--accent1);
     width: 100%;
     height: 150px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 50px auto;
 }
 
-.reviews > div{
+.reviews > div:nth-of-type(1) > div{
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -15,19 +19,19 @@
     color: #ffff;
 }
 
-.reviews > div > h2{
+.reviews > div:nth-of-type(1) > div > h2{
     font-size: 35px;
     font-weight: 500;
 }
 
-.reviews > div ul{
+.reviews > div:nth-of-type(1) > div ul{
     display: flex;
     align-items: center;
     list-style: none;
     gap: 50px;
 }
 
-.reviews > div ul li a{
+.reviews > div:nth-of-type(1) > div ul li a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -38,60 +42,151 @@
     border-radius: 15px;
 }
 
-.reviews > div ul li a:hover {
+.reviews > div:nth-of-type(1) > div ul li a:hover {
     background-color: var(--hover1);
     transition: 0.2s ease;
 }
 
-.reviews > div ul li a > img{
+.reviews > div:nth-of-type(1) > div ul li a > img{
     width: 150px;
     height: auto;
     margin-bottom: 5px;
 }
 
-.reviews > div ul li a span{
+.reviews > div:nth-of-type(1) > div ul li a span{
     display: flex;
     align-items: center;
     gap: 5px;
     color: #ffff;
 }
 
-.reviews > div ul li a span p{
+.reviews > div:nth-of-type(1) > div ul li a span p{
     font-size: 13px;
     margin: 5px 5px 0 0;
 }
 
-.reviews > div ul li a span > img {
+.reviews > div:nth-of-type(1) > div ul li a span > img {
     width: 17px;
     height: auto;
 }
 
+.reviews > div:nth-of-type(2){
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.reviews > div:nth-of-type(2) > div{
+    position: relative;
+    padding-bottom: 75px;
+}
+
+.reviews > div:nth-of-type(2) > div > div section{
+    position: relative;
+    border: 1px solid var(--accent1);
+    background: var(--accent2);
+    height: 275px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.reviews > div:nth-of-type(2) > div > div section > a img{
+    position: absolute;
+    height: auto;
+    width: 150px;
+    top: 15px;
+    left: 15px;
+}
+
+.reviews > div:nth-of-type(2) > div > div section > ul{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    gap: 2px;
+    list-style: none;
+}
+
+.reviews > div:nth-of-type(2) > div > div section > ul li img{
+    width: 15px;
+    height: auto;
+}
+
+.reviews > div:nth-of-type(2) > div > div section > p:nth-of-type(1){  
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    right: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.reviews > div:nth-of-type(2) > div > div section > p:nth-of-type(2){  
+    position: absolute;
+    top: 87px;
+    left: 15px;
+    color: #929292;
+    font-size: 12px;
+}
+
+.reviews > div:nth-of-type(2) > div > div section > p:nth-of-type(3){  
+    position: absolute;
+    top: 115px;
+    left: 15px;
+    right: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.reviews > div:nth-of-type(2) > div > div section > p:nth-of-type(4){  
+    position: absolute;
+    top: 175px;
+    left: 15px;
+    right: 15px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.reviews > div:nth-of-type(2) > div > div:nth-of-type(2){
+    top: auto;
+    bottom: 5px;
+}
+
+.reviews > div:nth-of-type(2) > div > div:nth-of-type(3){
+    top: auto;
+    bottom: 5px;
+}
+
 @media only screen and (max-width: 1215px) {
-    .reviews > div{
+    .reviews > div:nth-of-type(1) > div{
         padding: 0 15px;
     }
 
-    .reviews > div > h2{
+    .reviews > div:nth-of-type(1) > div > h2{
         font-size: 30px;
     }
 
-    .reviews > div ul{
+    .reviews > div:nth-of-type(1) > div ul{
         gap: 25px;
+    }
+
+    .reviews > div:nth-of-type(2){
+        padding: 0 10px;
     }
 }
 
 @media only screen and (max-width: 980px) {
-    .reviews{
+    .reviews > div:nth-of-type(1){
         height: auto;
         padding: 50px 0;
     }
 
-    .reviews > div{
+    .reviews > div:nth-of-type(1) > div{
         flex-direction: column;
         gap: 35px;
     }
 
-    .reviews > div > h2{
+    .reviews > div:nth-of-type(1) > div > h2{
         font-size: 38px;
         width: 100%;
         text-align: center;
@@ -99,13 +194,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .reviews > div > h2{
+    .reviews > div:nth-of-type(1) > div > h2{
         font-size: 32px;
     }
 }
 
 @media only screen and (max-width: 430px) {
-    .reviews > div ul{
+    .reviews > div:nth-of-type(1) > div ul{
         flex-direction: column;
         width: 100%;
     }

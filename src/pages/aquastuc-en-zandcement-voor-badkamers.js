@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import cement from "@/assets/img/cement.jpg";
 import stuk2 from "@/assets/img/stukken2.jpg";
-
+import Reviews from "@/components/reviews";
 
 export default function AquastucEnZandcementVoorBadkamers() {
   useEffect(() => {
@@ -77,6 +77,8 @@ export default function AquastucEnZandcementVoorBadkamers() {
 
         </div>
       </div>
+
+      <Reviews/>
     </>
   );
 }
