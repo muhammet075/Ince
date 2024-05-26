@@ -5,6 +5,7 @@ import Image from "next/image";
 import inceAuto1 from "@/assets/img/inceauto1.png";
 import inceAuto2 from "@/assets/img/inceauto2.png";
 import overons1 from "@/assets/img/overons1.png";
+import Reviews from "@/components/reviews";
 
 export default function Overons() {
   useEffect(() => {
@@ -84,10 +85,7 @@ export default function Overons() {
         </div>
       </div>
 
-
-
-
-
+      <Reviews/>
     </>
   );
 }
