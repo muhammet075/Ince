@@ -104,15 +104,14 @@ function Reviews() {
                     <section className="swiper-slide" key={index}>
                         <Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince" target="_blank"><Image src={werkspotdark} alt="Logo van Werkspot"/></Link>
                         <ul>
-                            <li><Image src={star} alt="Gouden ster"/></li>
-                            <li><Image src={star} alt="Gouden ster"/></li>
-                            <li><Image src={star} alt="Gouden ster"/></li>
-                            <li><Image src={star} alt="Gouden ster"/></li>
-                            <li><Image src={star} alt="Gouden ster"/></li>
-                        </ul>
+    {[...Array(review.sterren)].map((_, index) => (
+        <li key={index}><Image src={star} alt="Gouden ster"/></li>
+    ))}
+</ul>
+
                         <p>{review.naam}</p>
                         <p>{review.datum}</p>
-                        <p>{review.wermzaamheid}</p>
+                        <p>{review.werkzaamheid}</p>
                         <p>{review.omschrijving.length > 1 ? `"${review.omschrijving.length > 125 ? review.omschrijving.substring(0, 125) + '...' : review.omschrijving}"` : review.omschrijving}</p>
                     </section>
                 ))}
