@@ -20,7 +20,7 @@ function Header() {
   const router = useRouter();
 
   function kiesTaal(event) {
-    let gekozenTaal = event.target.classList;
+    const gekozenTaal = event.target.classList;
     if (gekozenTaal.contains("nederlands")) {
       window.location.href = "/";
     } else if (gekozenTaal.contains("engels")) {
@@ -78,11 +78,10 @@ function Header() {
     const translateParams = "?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
     const links = document.getElementsByTagName('a');
     const currentURL = window.location.href;
-
     const isTranslatedSite = currentURL.includes(baseURL);
 
-    for (let i = 0; i < links.length; i++) {
-      let currentHref = links[i].getAttribute('href');
+    const processLink = (link) => {
+      let currentHref = link.getAttribute('href');
 
       if (isTranslatedSite) {
         let newHref;
@@ -97,19 +96,22 @@ function Header() {
           }
         }
 
-        links[i].setAttribute('href', newHref);
-        links[i].setAttribute('target', '_self');
-        links[i].addEventListener('click', (e) => {
+        link.setAttribute('href', newHref);
+        link.setAttribute('target', '_self');
+        link.addEventListener('click', (e) => {
           e.preventDefault();
           window.location.href = newHref;
         });
       } else {
-        links[i].setAttribute('href', currentHref);
-        links[i].addEventListener('click', (e) => {
+        link.addEventListener('click', (e) => {
           e.preventDefault();
           router.push(currentHref);
         });
       }
+    };
+
+    for (let i = 0; i < links.length; i++) {
+      processLink(links[i]);
     }
 
     setInterval(checkTaal, 500);
