@@ -14,21 +14,19 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function Header() {
-
-  function kiesTaal(event) {
-    let gekozenTaal = event.target.classList;
-    if (gekozenTaal.contains("nederlands")) {
-        window.location.href = "/";
-    } else if (gekozenTaal.contains("engels")) {
-        window.location.href = "https://ince-vercel-app.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
-    }
-}
-
-
   const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
   const [isSubmenuClicked, setIsSubmenuClicked] = useState(false);
   const submenuRef = useRef(null);
   const router = useRouter();
+
+  function kiesTaal(event) {
+    let gekozenTaal = event.target.classList;
+    if (gekozenTaal.contains("nederlands")) {
+      window.location.href = "/";
+    } else if (gekozenTaal.contains("engels")) {
+      window.location.href = "https://stukadoorsbedrijfince-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
+    }
+  }
 
   function openLanguageList() {
     const closeLanguages = document.querySelector("#closelanguages");
@@ -76,15 +74,53 @@ function Header() {
   }
 
   useEffect(() => {
+    const baseURL = "https://stukadoorsbedrijfince-nl.translate.goog";
+    const translateParams = "?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
+    const links = document.getElementsByTagName('a');
+    const currentURL = window.location.href;
+
+    const isTranslatedSite = currentURL.includes(baseURL);
+
+    for (let i = 0; i < links.length; i++) {
+      let currentHref = links[i].getAttribute('href');
+
+      if (isTranslatedSite) {
+        let newHref;
+
+        if (currentHref.startsWith('http')) {
+          newHref = `${currentHref}${translateParams}`;
+        } else {
+          if (currentHref.startsWith('/')) {
+            newHref = `${baseURL}${currentHref}${translateParams}`;
+          } else {
+            newHref = `${baseURL}/${currentHref}${translateParams}`;
+          }
+        }
+
+        links[i].setAttribute('href', newHref);
+        links[i].setAttribute('target', '_self'); // Ensures link opens in the same tab
+        links[i].addEventListener('click', (e) => {
+          e.preventDefault();
+          window.location.href = newHref;
+        });
+      } else {
+        links[i].setAttribute('href', currentHref);
+        links[i].addEventListener('click', (e) => {
+          e.preventDefault();
+          router.push(currentHref);
+        });
+      }
+    }
+
     setInterval(checkTaal, 500);
 
     function checkTaal() {
-        if (document.querySelector("html").classList.contains("translated-ltr")){
-          document.querySelector("#selectedlanguage").src = "/en.png";
-        } else {
-          document.querySelector("#selectedlanguage").src = "/nl.png";
-        }
+      if (document.querySelector("html").classList.contains("translated-ltr")) {
+        document.querySelector("#selectedlanguage").src = "/en.png";
+      } else {
+        document.querySelector("#selectedlanguage").src = "/nl.png";
       }
+    }
 
     function adjustHeaderMenuDisplay() {
       const hamburgerContainer = document.querySelector("#menulist");
@@ -123,7 +159,7 @@ function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("touchstart", handleClickOutside);
     };
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     const handleRouteChange = () => {
