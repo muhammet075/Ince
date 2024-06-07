@@ -14,6 +14,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function Header() {
+  const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
+  const [isSubmenuClicked, setIsSubmenuClicked] = useState(false);
+  const submenuRef = useRef(null);
+  const router = useRouter();
 
   function kiesTaal(event) {
     let gekozenTaal = event.target.classList;
@@ -22,13 +26,7 @@ function Header() {
     } else if (gekozenTaal.contains("engels")) {
         window.location.href = "https://stukadoorsbedrijfince-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
     }
-}
-
-
-  const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
-  const [isSubmenuClicked, setIsSubmenuClicked] = useState(false);
-  const submenuRef = useRef(null);
-  const router = useRouter();
+  }
 
   function openLanguageList() {
     const closeLanguages = document.querySelector("#closelanguages");
@@ -76,15 +74,41 @@ function Header() {
   }
 
   useEffect(() => {
+    const baseURL = "https://stukadoorsbedrijfince-nl.translate.goog";
+    const translateParams = "?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
+    const links = document.getElementsByTagName('a');
+    
+    for (let i = 0; i < links.length; i++) {
+      let currentHref = links[i].getAttribute('href');
+      let newHref;
+
+      if (currentHref.startsWith('http')) {
+        newHref = `${currentHref}${translateParams}`;
+      } else {
+        if (currentHref.startsWith('/')) {
+          newHref = `${baseURL}${currentHref}${translateParams}`;
+        } else {
+          newHref = `${baseURL}/${currentHref}${translateParams}`;
+        }
+      }
+
+      links[i].setAttribute('href', newHref);
+      links[i].setAttribute('target', '_self');
+      links[i].addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = newHref;
+      });
+    }
+
     setInterval(checkTaal, 500);
 
     function checkTaal() {
-        if (document.querySelector("html").classList.contains("translated-ltr")){
-          document.querySelector("#selectedlanguage").src = "/en.png";
-        } else {
-          document.querySelector("#selectedlanguage").src = "/nl.png";
-        }
+      if (document.querySelector("html").classList.contains("translated-ltr")){
+        document.querySelector("#selectedlanguage").src = "/en.png";
+      } else {
+        document.querySelector("#selectedlanguage").src = "/nl.png";
       }
+    }
 
     function adjustHeaderMenuDisplay() {
       const hamburgerContainer = document.querySelector("#menulist");
