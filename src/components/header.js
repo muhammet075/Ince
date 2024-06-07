@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import styles from "@/styles/header.module.css";
 import Image from "next/image";
 import Logo from "@/assets/img/ince-logo.svg";
@@ -14,19 +13,20 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function Header() {
+
+  function kiesTaal(event) {
+    let gekozenTaal = event.target.classList;
+    if (gekozenTaal.contains("nederlands")) {
+        window.location.href = "/";
+    } else if (gekozenTaal.contains("engels")) {
+        window.location.href = "https://stukadoorsbedrijfince-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
+    }
+}
+
+
   const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
   const [isSubmenuClicked, setIsSubmenuClicked] = useState(false);
   const submenuRef = useRef(null);
-  const router = useRouter();
-
-  function kiesTaal(event) {
-    const gekozenTaal = event.target.classList;
-    if (gekozenTaal.contains("nederlands")) {
-      window.location.href = "/";
-    } else if (gekozenTaal.contains("engels")) {
-      window.location.href = "https://stukadoorsbedrijfince-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
-    }
-  }
 
   function openLanguageList() {
     const closeLanguages = document.querySelector("#closelanguages");
@@ -74,55 +74,18 @@ function Header() {
   }
 
   useEffect(() => {
-    const baseURL = "https://stukadoorsbedrijfince-nl.translate.goog";
-    const translateParams = "?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
-    const links = document.getElementsByTagName('a');
-    const currentURL = window.location.href;
-    const isTranslatedSite = currentURL.includes(baseURL);
-
-    const processLink = (link) => {
-      let currentHref = link.getAttribute('href');
-
-      if (isTranslatedSite) {
-        let newHref;
-
-        if (currentHref.startsWith('http')) {
-          newHref = `${currentHref}${translateParams}`;
-        } else {
-          if (currentHref.startsWith('/')) {
-            newHref = `${baseURL}${currentHref}${translateParams}`;
-          } else {
-            newHref = `${baseURL}/${currentHref}${translateParams}`;
-          }
-        }
-
-        link.setAttribute('href', newHref);
-        link.setAttribute('target', '_self');
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          window.location.href = newHref;
-        });
-      } else {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          router.push(currentHref);
-        });
-      }
-    };
-
-    for (let i = 0; i < links.length; i++) {
-      processLink(links[i]);
-    }
-
     setInterval(checkTaal, 500);
 
     function checkTaal() {
-      if (document.querySelector("html").classList.contains("translated-ltr")) {
-        document.querySelector("#selectedlanguage").src = "/en.png";
-      } else {
-        document.querySelector("#selectedlanguage").src = "/nl.png";
+        if (document.querySelector("html").classList.contains("translated-ltr")){
+          document.querySelector("#selectedlanguage").src = "/en.png";
+
+        } else {
+          document.querySelector("#selectedlanguage").src = "/nl.png";
+        }
       }
-    }
+
+
 
     function adjustHeaderMenuDisplay() {
       const hamburgerContainer = document.querySelector("#menulist");
@@ -161,20 +124,8 @@ function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("touchstart", handleClickOutside);
     };
-  }, [router]);
+  }, []);
 
-  useEffect(() => {
-    const handleRouteChange = () => {
-      setIsSubmenuClicked(false);
-      setIsSubmenuVisible(false);
-    };
-
-    router.events.on('routeChangeComplete', handleRouteChange);
-
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [router.events]);
 
   const handleSubmenuClick = () => {
     setIsSubmenuClicked(!isSubmenuClicked);
