@@ -141,7 +141,7 @@ export default function Contact() {
         <div>
           <ul>
             <li><h2>Stukadoorsbedrijf Ince</h2></li>
-            <li><b>E-Mail:</b> info@incestukadoor.nl</li>
+            <li><b>E-Mail:</b> info@stukadoorsbedrijfince.nl</li>
             <li><b>Telefoon:</b> 06 48 03 33 74</li>
             <li><b>KVK:</b> 80027814</li>
             <li><b>BTW:</b> NL003387007B36</li>
