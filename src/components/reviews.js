@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/reviews.module.css";
@@ -7,126 +7,113 @@ import werkspot from "@/assets/logos/werkspot.svg";
 import werkspotdark from "@/assets/logos/werkspotdark.svg";
 import google from "@/assets/logos/google.svg";
 import star from "@/assets/icons/goldstar.svg";
-import Aos from "aos";
-import "aos/dist/aos.css";
-
-import reviews from "public/reviews";
+import reviewsData from "public/reviews";
 
 function Reviews() {
-
+    const [reviewsPerPage, setReviewsPerPage] = useState(3);
+    const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
-          
-        const swiper2 = new Swiper('.reviewslider', {
-            loop: true,
-            preventClicks: true,
-            preventClicksPropagation: true,
-            noSwipingSelector: 'button',
-            noSwipingSelector: 'a',
-            slideToClickedSlide: false,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-              },
-        
-            breakpoints: {
-                0: {
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-        
-                },
-                600: {
-                    slidesPerView: 2, 
-                    spaceBetween: 10,
-                },
-                850: {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                },
-                1100: {
-                  slidesPerView: 3,
-                  spaceBetween: 25,
-                }
-                },
+        function handleResize() {
+            if (window.innerWidth <= 600) {
+                setReviewsPerPage(1);
+            } else if (window.innerWidth <= 850) {
+                setReviewsPerPage(2);
+            } else {
+                setReviewsPerPage(3);
+            } 
+        }
 
-            centeredSlides: false,
-              navigation: {
-                nextEl: ".swiper-button-next2",
-                prevEl: ".swiper-button-prev2",
-            },
-        }); 
-        
-        
-        Aos.init();
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
 
-  return (
-    <div className={styles.reviews}>
-        <div>
+    const totalPages = Math.ceil(reviewsData[0].reviews.length / reviewsPerPage);
+    const startIndex = (currentPage - 1) * reviewsPerPage;
+    const endIndex = currentPage * reviewsPerPage;
+    const currentReviews = reviewsData[0].reviews.slice(startIndex, endIndex);
+
+    const handleNextPage = () => {
+        setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+    };
+
+    const handlePrevPage = () => {
+        setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+    };
+
+    return (
+        <div className={styles.reviews}>
+
             <div>
-                <h2>Meer dan +100 positieve recensies:</h2>
-               <ul>
-                    <li data-aos="fade-up">
-                        <Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince/reviews" target="_blank">
-                            <Image src={werkspot} alt="Logo van Werkspot"/>
-                            <span>
-                                <p>4.8/5.0</p>
-                                <Image src={star} alt="Gouden ster"/>
-                                <Image src={star} alt="Gouden ster"/>
-                                <Image src={star} alt="Gouden ster"/>
-                                <Image src={star} alt="Gouden ster"/>
-                                <Image src={star} alt="Gouden ster"/>
-                            </span>
-                        </Link>
-                    </li>
-                    <li data-aos="fade-up">
-                        <Link href="https://maps.app.goo.gl/nUtUQAgADHbWnaMSA" target="_blank">
-                            <Image src={google} alt="Logo van Werkspot"/>
-                            <span>
-                                <p>4.8/5.0</p>
-                                <Image src={star} alt="Gouden ster"/>
-                                <Image src={star} alt="Gouden ster"/>
-                                <Image src={star} alt="Gouden ster"/>
-                                <Image src={star} alt="Gouden ster"/>
-                                <Image src={star} alt="Gouden ster"/>
-                            </span>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div>
-            <div className="reviewslider">
-            <div className="swiper-wrapper">
-                {reviews[0].reviews.map((review, index) => (
-
-                    <section className="swiper-slide" key={index}>
-                        <Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince" target="_blank"><Image src={werkspotdark} alt="Logo van Werkspot"/></Link>
-                        <ul>
-    {[...Array(review.sterren)].map((_, index) => (
-        <li key={index}><Image src={star} alt="Gouden ster"/></li>
-    ))}
-</ul>
-
-                        <p>{review.naam}</p>
-                        <p>{review.datum}</p>
-                        <p>{review.werkzaamheid}</p>
-                        <p>{review.omschrijving.length > 1 ? `"${review.omschrijving.length > 125 ? review.omschrijving.substring(0, 125) + '...' : review.omschrijving}"` : review.omschrijving}</p>
-                    </section>
-                ))}
+                <div>
+                    <h2>Meer dan +100 positieve recensies:</h2>
+                    <ul>
+                        <li data-aos="fade-up">
+                            <Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince/reviews" target="_blank">
+                                <Image src={werkspot} alt="Logo van Werkspot"/>
+                                <span>
+                                    <p>4.8/5.0</p>
+                                    <Image src={star} alt="Gouden ster"/>
+                                    <Image src={star} alt="Gouden ster"/>
+                                    <Image src={star} alt="Gouden ster"/>
+                                    <Image src={star} alt="Gouden ster"/>
+                                    <Image src={star} alt="Gouden ster"/>
+                                </span>
+                            </Link>
+                        </li>
+                        <li data-aos="fade-up">
+                            <Link href="https://maps.app.goo.gl/nUtUQAgADHbWnaMSA" target="_blank">
+                                <Image src={google} alt="Logo van Werkspot"/>
+                                <span>
+                                    <p>4.8/5.0</p>
+                                    <Image src={star} alt="Gouden ster"/>
+                                    <Image src={star} alt="Gouden ster"/>
+                                    <Image src={star} alt="Gouden ster"/>
+                                    <Image src={star} alt="Gouden ster"/>
+                                    <Image src={star} alt="Gouden ster"/>
+                                </span>
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
-
-
-            <div className="leftBtn swiper-button-prev swiper-button-prev2"></div>
-            <div className="rightBtn swiper-button-next swiper-button-next2"></div>
-
             </div>
 
 
+            <div>
+                <div>
+                    {currentReviews.map((review, index) => (
+                        <div className={styles.reviewCard} key={index}>
+                            <Link href="https://www.werkspot.nl/profiel/stukadoorsbedrijf-ince" target="_blank">
+                                <Image src={werkspotdark} alt="Logo van Werkspot" />
+                            </Link>
+                            <ul className={styles.starRating}>
+                                {[...Array(review.sterren)].map((_, index) => (
+                                    <li key={index}><Image src={star} alt="Gouden ster" /></li>
+                                ))}
+                            </ul>
+                            <p>{review.naam}</p>
+                            <p>{review.datum}</p>
+                            <p>{review.werkzaamheid}</p>
+                            <p>{review.omschrijving.length > 1 ? `"${review.omschrijving.length > 125 ? review.omschrijving.substring(0, 125) + '...' : review.omschrijving}"` : review.omschrijving}</p>
+                        </div>
+                    ))}
+                </div>
+                <div>
+
+                    <div onClick={handlePrevPage} disabled={currentPage === 1} className="swiper-button-prev"></div>
+
+
+                    <span>{currentPage} van {totalPages}</span>
+                    <div onClick={handleNextPage} disabled={currentPage === totalPages} className="swiper-button-next"></div>
+                </div>
+            </div>
+  
         </div>
-    </div>
-  );
+    );
 }
 
 export default Reviews;

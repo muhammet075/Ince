@@ -2,7 +2,7 @@ const sitemap = require("nextjs-sitemap-generator");
 const path = require("path");
 
 sitemap({
-    baseUrl: "Next.com",
+    baseUrl: "https://stukadoorsbedrijfince.nl",
     pagesDirectory: path.resolve(__dirname, "../out/"),
     targetDirectory: path.resolve(__dirname, "../out/"),
     sitemapFilename: 'sitemap.xml',

@@ -1,15 +1,15 @@
-.reviews {
+.reviews{
     overflow: hidden;
 }
 
-.reviews > div:nth-of-type(1) {
+.reviews > div:nth-of-type(1){
     background-color: var(--accent1);
     width: 100%;
     height: 150px;
     margin: 0 auto 50px auto;
 }
 
-.reviews > div:nth-of-type(1) > div {
+.reviews > div:nth-of-type(1) > div{
     max-width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -19,19 +19,19 @@
     color: #ffff;
 }
 
-.reviews > div:nth-of-type(1) > div > h2 {
+.reviews > div:nth-of-type(1) > div > h2{
     font-size: 35px;
     font-weight: 500;
 }
 
-.reviews > div:nth-of-type(1) > div ul {
+.reviews > div:nth-of-type(1) > div ul{
     display: flex;
     align-items: center;
     list-style: none;
     gap: 50px;
 }
 
-.reviews > div:nth-of-type(1) > div ul li a {
+.reviews > div:nth-of-type(1) > div ul li a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,23 +44,23 @@
 
 .reviews > div:nth-of-type(1) > div ul li a:hover {
     background-color: var(--hover1);
-    transition: background-color 0.2s ease;
+    transition: 0.2s ease;
 }
 
-.reviews > div:nth-of-type(1) > div ul li a > img {
+.reviews > div:nth-of-type(1) > div ul li a > img{
     width: 150px;
     height: auto;
     margin-bottom: 5px;
 }
 
-.reviews > div:nth-of-type(1) > div ul li a span {
+.reviews > div:nth-of-type(1) > div ul li a span{
     display: flex;
     align-items: center;
     gap: 5px;
     color: #ffff;
 }
 
-.reviews > div:nth-of-type(1) > div ul li a span p {
+.reviews > div:nth-of-type(1) > div ul li a span p{
     font-size: 13px;
     margin: 5px 5px 0 0;
 }
@@ -70,34 +70,27 @@
     height: auto;
 }
 
-.reviews > div:nth-of-type(2) {
+.reviews > div:nth-of-type(2){
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) {
-    display: flex;
-    justify-content: space-between;
+.reviews > div:nth-of-type(2) > div{
+    position: relative;
+    padding-bottom: 75px;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) > div {
+.reviews > div:nth-of-type(2) > div > div section{
     position: relative;
     border: 1px solid var(--accent1);
     background: var(--accent2);
-    width: 32%;
     height: 275px;
     border-radius: 15px;
     padding: 15px;
-    transition: transform 0.3s ease; /* Animatie toegevoegd */
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1).transitioning > div {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) > div > a > img {
+.reviews > div:nth-of-type(2) > div > div section > a img{
     position: absolute;
     height: auto;
     width: 150px;
@@ -105,7 +98,7 @@
     left: 15px;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) > div > ul {
+.reviews > div:nth-of-type(2) > div > div section > ul{
     position: absolute;
     right: 15px;
     top: 15px;
@@ -114,12 +107,12 @@
     list-style: none;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) > div > ul img {
+.reviews > div:nth-of-type(2) > div > div section > ul li img{
     width: 15px;
     height: auto;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) > div > p:nth-of-type(1) {
+.reviews > div:nth-of-type(2) > div > div section > p:nth-of-type(1){  
     position: absolute;
     top: 60px;
     left: 15px;
@@ -128,7 +121,7 @@
     font-weight: 500;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) > div > p:nth-of-type(2) {
+.reviews > div:nth-of-type(2) > div > div section > p:nth-of-type(2){  
     position: absolute;
     top: 87px;
     left: 15px;
@@ -136,7 +129,7 @@
     font-size: 12px;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) > div > p:nth-of-type(3) {
+.reviews > div:nth-of-type(2) > div > div section > p:nth-of-type(3){  
     position: absolute;
     top: 115px;
     left: 15px;
@@ -145,7 +138,7 @@
     font-weight: 500;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(1) > div > p:nth-of-type(4) {
+.reviews > div:nth-of-type(2) > div > div section > p:nth-of-type(4){  
     position: absolute;
     top: 175px;
     left: 15px;
@@ -154,72 +147,60 @@
     font-style: italic;
 }
 
-.reviews > div:nth-of-type(2) > div:nth-of-type(2) {
-    position: relative;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.reviews > div:nth-of-type(2) > div > div:nth-of-type(2){
+    top: auto;
+    bottom: 5px;
+}
+
+.reviews > div:nth-of-type(2) > div > div:nth-of-type(3){
+    top: auto;
+    bottom: 5px;
 }
 
 @media only screen and (max-width: 1215px) {
-    .reviews > div:nth-of-type(1) > div {
+    .reviews > div:nth-of-type(1) > div{
         padding: 0 15px;
     }
 
-    .reviews > div:nth-of-type(1) > div > h2 {
+    .reviews > div:nth-of-type(1) > div > h2{
         font-size: 30px;
     }
 
-    .reviews > div:nth-of-type(1) > div ul {
+    .reviews > div:nth-of-type(1) > div ul{
         gap: 25px;
     }
 
-    .reviews > div:nth-of-type(2) {
-        padding: 0 15px;
+    .reviews > div:nth-of-type(2){
+        padding: 0 10px;
     }
 }
 
 @media only screen and (max-width: 980px) {
-    .reviews > div:nth-of-type(1) {
+    .reviews > div:nth-of-type(1){
         height: auto;
         padding: 50px 0;
     }
 
-    .reviews > div:nth-of-type(1) > div {
+    .reviews > div:nth-of-type(1) > div{
         flex-direction: column;
         gap: 35px;
     }
 
-    .reviews > div:nth-of-type(1) > div > h2 {
+    .reviews > div:nth-of-type(1) > div > h2{
         font-size: 38px;
         width: 100%;
         text-align: center;
     }
 }
 
-@media only screen and (max-width: 850px) {
-    .reviews > div:nth-of-type(2) > div:nth-of-type(1) > div {
-        width: 49%;
-    }
-    .transitioning > div {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-
 @media only screen and (max-width: 600px) {
-    .reviews > div:nth-of-type(1) > div > h2 {
+    .reviews > div:nth-of-type(1) > div > h2{
         font-size: 32px;
-    }
-
-    .reviews > div:nth-of-type(2) > div:nth-of-type(1) > div {
-        width: 100%;
     }
 }
 
 @media only screen and (max-width: 430px) {
-    .reviews > div:nth-of-type(1) > div ul {
+    .reviews > div:nth-of-type(1) > div ul{
         flex-direction: column;
         width: 100%;
     }
