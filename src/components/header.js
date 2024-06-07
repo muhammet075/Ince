@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "@/styles/header.module.css";
 import Image from "next/image";
 import Logo from "@/assets/img/ince-logo.svg";
@@ -19,7 +20,7 @@ function Header() {
     if (gekozenTaal.contains("nederlands")) {
         window.location.href = "/";
     } else if (gekozenTaal.contains("engels")) {
-        window.location.href = "https://stukadoorsbedrijfince-nl.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
+        window.location.href = "https://ince-vercel-app.translate.goog/?_x_tr_sl=nl&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp&_x_tr_hist=true";
     }
 }
 
@@ -27,6 +28,7 @@ function Header() {
   const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
   const [isSubmenuClicked, setIsSubmenuClicked] = useState(false);
   const submenuRef = useRef(null);
+  const router = useRouter();
 
   function openLanguageList() {
     const closeLanguages = document.querySelector("#closelanguages");
@@ -79,13 +81,10 @@ function Header() {
     function checkTaal() {
         if (document.querySelector("html").classList.contains("translated-ltr")){
           document.querySelector("#selectedlanguage").src = "/en.png";
-
         } else {
           document.querySelector("#selectedlanguage").src = "/nl.png";
         }
       }
-
-
 
     function adjustHeaderMenuDisplay() {
       const hamburgerContainer = document.querySelector("#menulist");
@@ -126,6 +125,18 @@ function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsSubmenuClicked(false);
+      setIsSubmenuVisible(false);
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
   const handleSubmenuClick = () => {
     setIsSubmenuClicked(!isSubmenuClicked);
