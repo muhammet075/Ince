@@ -1,0 +1,30 @@
+.footer{
+    background-color: #ffff;
+    max-width: 450px;
+    height: 140px;
+    position: fixed;
+    bottom: 0;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+}
+
+.footer img{
+    width: 93%;
+    height: auto;
+    margin-top: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+/* 
+  .footer div{
+    background-color: gray;
+  }
+
+ .footer div img{
+    width: 20px;
+    height: 20px;
+ } */

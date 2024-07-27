@@ -1,0 +1,169 @@
+.kredikart{
+    background-color: #ffff;
+    padding: 15px;
+    padding-bottom: 200px;
+}
+
+.kredikart h2:first-child{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 21px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.kredikart > section:nth-of-type(1){
+    width: 100%;
+    height: 220px;
+    margin: auto;
+    background: linear-gradient(266deg, rgb(219 83 83) 6%, rgba(193,5,5,1) 67%, rgba(202,41,40,1) 100%);
+    border-radius: 15px;
+    position: relative;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.kredikart > section:nth-of-type(1) div:first-child{
+    background: #ffff;
+    width: 160px;
+    height: 55px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+}
+
+.kredikart > section:nth-of-type(1) div:first-child > img{
+    position: absolute;
+    width: 120px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.kredikart > section:nth-of-type(1) div:nth-of-type(2) p:first-child{
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: 400;
+    font-size: 19px;
+    color: #ffff;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.kredikart > section:nth-of-type(1) div:nth-of-type(2) p:first-child span{
+    background-color: #ffff;
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    display: block;
+    margin-right: 3px;
+}
+
+.kredikart > section:nth-of-type(1) div:nth-of-type(2) p:first-child span:first-child{
+    margin-left: 7px;
+}
+
+.kredikart > section:nth-of-type(1) div:nth-of-type(2) p:nth-of-type(2){
+    color: #ffff;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.kredikart > section:nth-of-type(1) div:nth-of-type(2) p:nth-of-type(3){
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.kredikart > section:nth-of-type(1) div:nth-of-type(2) img{
+    position: absolute;
+    width: 60px;
+    height: auto;
+    top: 30px;
+    right: 0;
+}
+
+.kredikart > section:nth-of-type(1) div:nth-of-type(3) img{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.kredikart > section:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.kredikart > section:nth-of-type(2) button{
+    background: #e20314;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    position: relative;
+    -webkit-appearance: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.kredikart > section:nth-of-type(2) button img{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.kredikart > section:nth-of-type(2) button:nth-of-type(1)::before{
+    content: "Bilgi";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 12px;
+    -webkit-appearance: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.kredikart > section:nth-of-type(2) button:nth-of-type(2)::before{
+    content: "Engelle";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 12px;
+    -webkit-appearance: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.kredikart > section:nth-of-type(2) button:nth-of-type(3)::before{
+    content: "Ayarlar";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 12px;
+    -webkit-appearance: none;
+    color: #000;
+    font-weight: 500;
+}
+

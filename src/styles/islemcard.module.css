@@ -1,0 +1,105 @@
+.islemcard{
+    background-color: #ffff;
+    padding-top: 25px;
+}
+
+.islemcard > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+.islemcard > div button{
+    background: none;
+    border: none;
+    height: fit-content;
+    margin: 0 15px;
+}
+
+.islemcard > div button img{
+    width: 15px;
+    height: auto;
+    filter: invert(100%);
+    margin-bottom: -4px;
+}
+
+.islemcard > div h1{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 8px;
+    text-align: center;
+}
+
+.islemcard > section{
+    padding-bottom: 200px;
+}
+
+.islemcard section:nth-of-type(1) div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.islemcard section:nth-of-type(1) div:first-child:after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #000;
+}
+
+.islemcard section:nth-of-type(1) div section{
+    pointer-events: none;
+}
+
+.islemcard section:nth-of-type(1) div section:nth-of-type(1) p:nth-of-type(1){
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    pointer-events: none;
+}
+
+.islemcard section:nth-of-type(1) div section:nth-of-type(1) p:nth-of-type(2){
+    font-size: 12px;
+    font-weight: 400;
+    color: #393939;
+    pointer-events: none;
+}
+
+.islemcard section:nth-of-type(1) div section:nth-of-type(2) p{
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 30px;
+    pointer-events: none;
+} 
+
+.islemcard section:nth-of-type(1) div section:nth-of-type(3){
+    position: absolute;
+    right: 10px;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+}
+
+.islemcard section:nth-of-type(1) div section:nth-of-type(3) img{
+    width: 10px;
+    height: auto;
+    pointer-events: none;
+
+}
+
+.islemdugmesi:active{
+    background-color: red !important;
+}
