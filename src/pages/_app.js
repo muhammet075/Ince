@@ -14,8 +14,8 @@ export default function App({ Component, pageProps }) {
         <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
       </Head>
       <Header/>
